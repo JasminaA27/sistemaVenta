@@ -12,6 +12,7 @@ class vistasControlador extends vistaModelo{
             $respuesta = vistaModelo::obtener_vista($ruta[0]);
         }else{
             $respuesta = "login";
+            
         }
         return $respuesta;
     }
