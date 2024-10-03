@@ -3,4 +3,4 @@
  $vista = new vistasControlador();
  $vista->obtenerPlantillaControlador();
 ?>
-dsfgsfg
+dsfgsfgasxwd
