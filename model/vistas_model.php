@@ -5,7 +5,8 @@ class vistaModelo
     protected static function obtener_vista($vista)
     {
         $palabras_permitidas = ['usuario', 'producto', 'index', 'esika', 'lbel', 'cyzone', 'descripcion', 'producto1', 
-        'contactanos', ];
+        'contactanos','producto11','producto2', 'producto21', 'producto22', 'producto3', 'producto31', 'producto32',
+         'producto4', 'producto41', 'producto5', 'producto51', 'producto52' ];
         if (in_array($vista, $palabras_permitidas)) {
             if (is_file("./views/" . $vista . ".php")) {
                 $contenido = "./views/" . $vista . ".php";
