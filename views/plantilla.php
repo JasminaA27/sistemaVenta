@@ -1,7 +1,8 @@
 <?php
 
 require_once "./controller/vistas_control.php";
-require_once "./config/config.php";
+require_once "./config/config1.php";
+
 $mostrar = new vistasControlador();
 
 $vista = $mostrar->obtenerVistaControlador();
