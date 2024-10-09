@@ -16,7 +16,7 @@
                         <img src="./views/plantilla/img/esika.png" alt="Bootstrap"
                             width="80" height="40">
                         </a>
-                        <a class="navbar-brand col-1" href="html/lbel.html"style=" width: 70px;">
+                        <a class="navbar-brand col-1" href="<?php echo BASE_URL; ?>lbel" style=" width: 70px;">
                             <img src="./views/plantilla/img/lbel.png" alt="Bootstrap"
                                 width="80" height="40">
                             </a>
@@ -58,15 +58,15 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href=""> <h5>Limpieza Facial</h5></a>
-                                        <a class="dropdown-item" href="html/1producto1.html"><p>Desmaquillador</p></a>
-                                        <a class="dropdown-item" href="html/1producto1.html"><p>Esfoliante facial</p></a>
-                                        <a class="dropdown-item" href="html/1producto1.html"><p>Limpiador facial</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto1"><p>Desmaquillador</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto1"><p>Esfoliante facial</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto1"><p>Limpiador facial</p></a>
                                     </li>
                                     <li><a class="dropdown-item" href=""> <h5>Ekincare</h5></a>
-                                        <a class="dropdown-item" href="html/Producto1_1.html"><p>Mascarilla</p></a>
-                                        <a class="dropdown-item" href="html/Producto1_1.html"><p>crema hidratante</p></a>
-                                        <a class="dropdown-item" href="html/Producto1_1.html"><p>Crema antimancha</p></a>
-                                        <a class="dropdown-item" href="html/Producto1_1.html"><p>Bloqueador</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto11"><p>Mascarilla</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto11"><p>crema hidratante</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto11"><p>Crema antimancha</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto11"><p>Bloqueador</p></a>
                                     </li>
                                   
                                 </ul>
@@ -77,15 +77,15 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href=""> <h5>Cuerpo</h5></a>
-                                        <a class="dropdown-item" href="html/producto2.html"><p>Crema corporal</p></a>
-                                        <a class="dropdown-item" href="html/producto2_1.html"><p>Crema de manos</p></a>
-                                        <a class="dropdown-item" href="html/producto2_1.html"><p>Jabones</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto2"><p>Crema corporal</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto21"><p>Crema de manos</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto21"><p>Jabones</p></a>
                                         <a class="dropdown-item" href=""><p>Exfoliante corporal</p></a>
                                     </li>
                                     <li><a class="dropdown-item" href=""><h5>Cabello </h5></a>
-                                        <a class="dropdown-item" href="html/producto2_2.html"><p>Shampoo y acondicionador</p></a>
-                                        <a class="dropdown-item" href="html/producto2_2.html"><p>Crema para peinar</p></a>
-                                        <a class="dropdown-item" href="html/producto2_2.html"><p>Tratamiento capilar</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto22"><p>Shampoo y acondicionador</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto22"><p>Crema para peinar</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto22"><p>Tratamiento capilar</p></a>
                                     </li>
                                 
                                 </ul>
@@ -95,21 +95,21 @@
                                     Maquillaje
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="html/producto3.html"><h5>Rostro</h5></a>
-                                        <a class="dropdown-item" href="html/producto3.html"><p>Base</p></a>
-                                        <a class="dropdown-item" href="html/producto3.html"><p>Rubor</p></a>  
-                                        <a class="dropdown-item" href="html/producto3.html"><p>Polvo</p></a>    
+                                    <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>producto3"><h5>Rostro</h5></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto3"><p>Base</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto3"><p>Rubor</p></a>  
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto3"><p>Polvo</p></a>    
                                     </li>
                                     <li><a class="dropdown-item" href="#"> <h5>Ojos</h5> </a>
-                                        <a class="dropdown-item" href="html/producto3_1.html"><p>Mascara de pestañas</p></a> 
-                                        <a class="dropdown-item" href="html/producto3_1.html"><p>Delineador de ojos</p></a>
-                                        <a class="dropdown-item" href="html/producto3_1.html"><p>Sombra de ojos</p></a>   
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto31"><p>Mascara de pestañas</p></a> 
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto31"><p>Delineador de ojos</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto31"><p>Sombra de ojos</p></a>   
                                     </li>
                                     <li><a class="dropdown-item" href="#"><h5>Labios</h5> </a>
-                                        <a class="dropdown-item" href="html/producto3_2.html"><p>Labial</p></a>  
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto32"><p>Labial</p></a>  
                                     </li>
-                                    <li><a class="dropdown-item" href="html/producto3_2.html"><h5>Uñas</h5> </a>
-                                        <a class="dropdown-item" href="html/producto3_2.html"><p>Esmaltes</p></a>  
+                                    <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>producto32"><h5>Uñas</h5> </a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto32"><p>Esmaltes</p></a>  
                                     </li>
                                 </ul>
                             <li class="nav-item dropdown">
@@ -118,13 +118,13 @@
                                     Perfume
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"> <h5>Mujer</h5></a>
-                                        <a class="dropdown-item" href="html/producto4.html"><p>Perfumes</p></a>
-                                        <a class="dropdown-item" href="html/producto4.html"><p>Colonias</p></a>
+                                    <li><a class="dropdown-item" href="#"> <h5>Hombre</h5></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto4"><p>Perfumes</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto4"><p>Colonias</p></a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#"> <h5>Hombre</h5> </a>
-                                        <a class="dropdown-item" href="html/producto4_1.html"><p>Perfumes</p></a>
-                                        <a class="dropdown-item" href="html/producto4_1.html"><p>Colonias</p></a>
+                                    <li><a class="dropdown-item" href="#"> <h5>Mujer</h5> </a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto41"><p>Perfumes</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto41"><p>Colonias</p></a>
                                     </li>
                                 </ul>
                             <li class="nav-item dropdown">
@@ -134,16 +134,16 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#"><h5>Joyeria</h5></a>
-                                        <a class="dropdown-item" href="html/Producto5.html"><p>Aretes</p></a>
-                                        <a class="dropdown-item" href="html/Producto5.html"><p>Collares</p></a>
-                                        <a class="dropdown-item" href="html/Producto5.html"><p>Anillos</p></a>
-                                        <a class="dropdown-item" href="html/Producto5.html"><p>Pulseras</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto5"><p>Aretes</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto5"><p>Collares</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto5"><p>Anillos</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto5"><p>Pulseras</p></a>
                                     </li>
                                     <li><a class="dropdown-item" href=""><h5>Relojes</h5> </a>
-                                        <a class="dropdown-item" href="html/producto5_1.html"><p>Reloj de mujer</p></a>
-                                        <a class="dropdown-item" href="html/producto5_1.html"><p>Reloj de hombre</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto51"><p>Reloj de mujer</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto51"><p>Reloj de hombre</p></a>
                                     <li><a class="dropdown-item" href="#"><h5>Accesorio</h5> </a>
-                                        <a class="dropdown-item" href="html/producto5_2.html"><p>Carteras y mochilas</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto52"><p>Carteras y mochilas</p></a>
                                     </li>
                                 </ul>
                             </li>
