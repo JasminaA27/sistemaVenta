@@ -75,7 +75,7 @@
     </div>
     <script>
         function redirigir() {
-            window.location.href = "<?php echo BASE_URL; ?>esika"; // Cambia la URL a la página deseada
+            window.location.href = "<?php echo BASE_URL; ?>esika"; 
         }
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
