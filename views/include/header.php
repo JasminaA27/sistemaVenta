@@ -12,15 +12,15 @@
     <nav class="navbar navbar-expand-lg" style="background-color:#F5A5EC ">
         <div class="container-fluid row d-block">
             <div class="col-12 row">
-                <a class="navbar-brand col-1" href="esika.html"style=" width: 70px;"  >
+                <a class="navbar-brand col-1" href="<?php echo BASE_URL; ?>esika"style=" width: 70px;"  >
                     <img src="./views/plantilla/img/esika.png" alt="Bootstrap"
                         width="80" height="40">
                     </a>
-                    <a class="navbar-brand col-1" href="lbel.html"style=" width: 70px; margin-left: -10px; ">
+                    <a class="navbar-brand col-1" href="<?php echo BASE_URL; ?>lbel"style=" width: 70px; margin-left: -10px; ">
                         <img src="./views/plantilla/img/lbel.png" alt="Bootstrap"
                             width="80" height="40">
                         </a>
-                        <a class="navbar-brand col-1" href="cyzone.html" style=" width: 70px; margin-left: -10px;">
+                        <a class="navbar-brand col-1" href="<?php echo BASE_URL; ?>cyzone" style=" width: 70px; margin-left: -10px;">
                             <img src="./views/plantilla/img/cyzone.png" alt="Bootstrap"
                                 width="80" height="40">
                             </a>  
