@@ -325,6 +325,6 @@
     <img src="https://lbelperu.vtexassets.com/assets/vtex.file-manager-graphql/images/5de08ca8-c16e-4a2d-bd49-a69a5bf15203___cf722d01ce1dd91f48ad0c31720fa196.jpg" 
     alt="" width="400" height="600"> 
     <button class="" style="background-color: red; border: red; color: white;">
-         <a href=""></a>Ir a catalogo</button>
+         <a href="https://belcorp.esika.com/pe/catalogo-virtual/"></a>Ir a catalogo</button>
 </div>
 </div>

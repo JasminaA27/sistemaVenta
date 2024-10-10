@@ -325,6 +325,6 @@
     <img src="https://cyzoneperu.vtexassets.com/assets/vtex.file-manager-graphql/images/b84f4d6f-6a38-43b8-a56c-6a409c6be2c7___fd0a204a64c76875c42f83ba7845bc32.jpg" 
     alt="" width="400" height="600"> 
     <button class="" style="background-color: red; border: red; color: white;">
-         <a href=""></a>Ir a catalogo</button>
+         <a href="https://belcorp.esika.com/pe/catalogo-virtual/"></a>Ir a catalogo</button>
 </div>
 </div>
