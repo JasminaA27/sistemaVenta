@@ -24,7 +24,7 @@
                       <div class="col-md-3">
                           <h5>CONOCENOS</h5>
                           <ul class="list-unstyled">
-                              <a href="nosotros.html"style="color: black; text-decoration: none;">Sobre nosotros <br>
+                              <a href="<?php echo BASE_URL; ?>sobrenosotros"style="color: black; text-decoration: none;">Sobre nosotros <br>
                                  
                               </a>
                               <a href="https://cdn1-prd.beautymovers.com/nextgencommerce/docs/legal/pe/condiciones-de-uso-web/2022.pdf"style="color: black; text-decoration: none;">Innovacion <br>
@@ -33,7 +33,7 @@
                               <a href="https://cdn1-prd.beautymovers.com/nextgencommerce/docs/legal/pe/condiciones-de-uso-web/2022.pdf"style="color: black; text-decoration: none;">Calidad <br>
                                
                               </a>
-                              <a href="nosotros.html"style="color: black; text-decoration: none;">Preguntas frecuentes <br>
+                              <a href="<?php echo BASE_URL; ?>sobrenosotros"style="color: black; text-decoration: none;">Preguntas frecuentes <br>
                                  
                               </a>
                           </ul>
@@ -59,9 +59,9 @@
                           <h5>Quiero ser consultora</h5>
                           <ul class="list-unstyled">
 
-                              <a href="html/contactanos.html"style="text-decoration: none; color: black;">contactenos</a> <br>
+                              <a href="<?php echo BASE_URL; ?>contactanos"style="text-decoration: none; color: black;">contactenos</a> <br>
                              
-                              <a href="html/librodereclamaciones.html" style="text-decoration: none; color: black;">Libro de reclamaciones</a> <br>
+                              <a href="<?php echo BASE_URL; ?>libroreclam" style="text-decoration: none; color: black;">Libro de reclamaciones</a> <br>
                               
                           </ul>
                       </div>

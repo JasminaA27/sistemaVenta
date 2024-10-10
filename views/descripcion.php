@@ -2,23 +2,23 @@
             <h2 class="text-center" style="color: black;" >ésika</h2>
             <div id="imagenes_productos" class="col-5 row m-0">
                 <div id="imagen_principal" class="col-12 p-2" style=" height: 500px; width: 600px; margin: 20px auto; border-radius: 10px;box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
-                    <img src="https://esikaperu.vtexassets.com/arquivos/ids/310560-500-auto?v=638555322201800000&width=500&height=auto&aspect=true"
+                    <img src="https://belcorpperu.vtexassets.com/arquivos/ids/315538-500-auto?v=638617518321030000&width=500&height=auto&aspect=true"
                         alt="" class="w-600 h-600" >
                 </div>
                 <div class="col-3" style=" height: 120px;">
-                    <img src="https://belcorpperu.vtexassets.com/arquivos/ids/310562-1600-auto?v=638555322204470000&width=1600&height=auto&aspect=true"
+                    <img src="https://belcorpperu.vtexassets.com/arquivos/ids/315539-1600-auto?v=638617518322900000&width=1600&height=auto&aspect=true"
                         alt="" class="w-100 h-120" style="border-radius: 10px;">
                 </div>
                 <div class="col-3" style=" height: 120px;">
-                    <img src="https://belcorpperu.vtexassets.com/arquivos/ids/310557-1600-auto?v=638555322196970000&width=1600&height=auto&aspect=true"
+                    <img src="https://belcorpperu.vtexassets.com/arquivos/ids/315537-1600-auto?v=638617518319770000&width=1600&height=auto&aspect=true"
                         alt="" class="w-100 h-120"style="border-radius: 10px;">
                 </div>
                 <div class="col-3" style=" height: 120px;">
-                    <img src="https://belcorpperu.vtexassets.com/arquivos/ids/310556-800-800?v=638555322192730000&width=800&height=800&aspect=true"
+                    <img src="https://belcorpperu.vtexassets.com/arquivos/ids/315540-1600-auto?v=638617518325870000&width=1600&height=auto&aspect=true"
                         alt="" class="w-100 h-120"style="border-radius: 10px;">
                 </div>
                 <div class="col-3" style=" height: 120px;">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH9DKCJnekJ-BP2JVY-DyuEqgzCqwVaBS9PAcieyjoEeOdL4C8R5u_Fxi7ZTZGEnFhobM&usqp=CAU"
+                    <img src="https://belcorpperu.vtexassets.com/arquivos/ids/315536-1600-auto?v=638617518318530000&width=1600&height=auto&aspect=true"
                         alt="" class="w-100 h-120"style="border-radius: 10px;">
                 </div>
             </div>
@@ -99,8 +99,8 @@
                 <td>Cantidad: <input type="number" value="1" min="0" style="background-color: #F5A5EC;border: #F5A5EC; width: 50px;" ></td>
             </div>
                 <div class="Comprarahora"> <br>
-                    <button style="background-color: #F5A5EC; border-radius: 10px ; border: #F5A5EC;" > <a href="carri.html" style="text-decoration: none; color: black;"> Agregar al carrito</a>  </button>
-                    <button style="background-color: #F5A5EC; border-radius: 10px ; border: #F5A5EC;"> <a href="esika.html" style="text-decoration: none; color: black;">Seguir comprando</a></button>
+                    <button style="background-color: #F5A5EC; border-radius: 10px ; border: #F5A5EC;" > <a href="<?php echo BASE_URL; ?>carrito " style="text-decoration: none; color: black;"> Agregar al carrito</a>  </button>
+                    <button style="background-color: #F5A5EC; border-radius: 10px ; border: #F5A5EC;"> <a href="<?php echo BASE_URL; ?>esika " style="text-decoration: none; color: black;">Seguir comprando</a></button>
                 </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@
                                
                             </div> 
                             <p class="card-text"style="text-align: center;">s/85.00</p>
-                            <a href="#" class="btn btn-primary" style="margin-left: 60px;"> Agregar </a>
+                            <a href="<?php echo BASE_URL; ?>carrito " class="btn btn-primary" style="margin-left: 60px;"> Agregar </a>
                         </div>
                     </div>
                 </div>
@@ -136,7 +136,7 @@
                                
                             </div> 
                             <p class="card-text"style="text-align: center;">s/33.00</p>
-                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Agregar </a>
+                            <a href="<?php echo BASE_URL; ?>carrito " class="btn btn-primary"style="margin-left: 60px;"> Agregar </a>
                         </div>
                     </div>
                 </div>
@@ -151,7 +151,7 @@
                                
                             </div> 
                             <p class="card-text"style="text-align: center;">s/55.00</p>
-                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Agregar </a>
+                            <a href="<?php echo BASE_URL; ?>carrito "class="btn btn-primary"style="margin-left: 60px;"> Agregar </a>
                         </div>
                     </div>
                 </div>
@@ -166,7 +166,7 @@
                                
                             </div> 
                             <p class="card-text"style="text-align: center;">s/45.00</p>
-                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Agregar </a>
+                            <a href="<?php echo BASE_URL; ?>carrito " class="btn btn-primary"style="margin-left: 60px;"> Agregar </a>
                         </div>
                     </div>
                 </div>
@@ -181,7 +181,7 @@
                                
                             </div> 
                             <p class="card-text" style="text-align: center;">s/35.00</p>
-                            <a href="#" class="btn btn-primary" style="margin-left: 60px;"> Agregar </a>
+                            <a href="<?php echo BASE_URL; ?>carrito " class="btn btn-primary" style="margin-left: 60px;"> Agregar </a>
                         </div>
                     </div>
                 </div>  

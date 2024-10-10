@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     
 </head>
-<body style="background: url('img/fondo.png') no-repeat center center fixed;background-size: cover;">
+<body style="background: url('./views/plantilla/img/fondo.png') no-repeat center center fixed;background-size: cover;">
     <div class="login-container text-center h-500"style="max-width: 400px;background: linear-gradient(to bottom right, #fbb8ff, #ffe4e4 );
     margin: 100px auto;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);max-width: 400px; padding: 20px;border-radius: 10px;">
         <img src="./views/plantilla/img/logo.png" alt="Logo" height="70" width="70">
@@ -25,7 +25,7 @@
             </div>
             <div class="form-group">
                 <span class="icons bi bi-envelope"></span>
-                <input type="email" class="form-control" style="margin-bottom: 15px;border-radius: 0%;"  placeholder="Correo Electrónico" required>
+                <input type="email" class="form-control" style="margin-bottom: 15px;border-radius: 0%;"  placeholder="Correo electrónico" required>
             </div>
             <div class="form-group">
                 <span class="icons bi bi-lock"></span>
@@ -39,7 +39,7 @@
             </button>
             
             <p class="mt-3">
-                ¿Ya tienes cuenta? <a href="Registrate.html " style="color: black; text-decoration: none;">Registrate</a>
+                ¿Ya tienes cuenta? <a href="<?php echo BASE_URL; ?>registrate" style="color: black; text-decoration: none;">Registrate</a>
             </p>
         </form>
     </div>

@@ -8,8 +8,8 @@
 </head>
 <body>
     <div class="container">
-        <a href="pagprincipal.html"><a href="esika.html" onclick="redirigir()" class="btn btn-link" style="color: black;">&larr; Regresar a inicio</a>
-            <img src="../img/inicio.png" alt="" id="img" class="img-fluid">
+        <a href="pagprincipal.html"><a href="<?php echo BASE_URL; ?>esika" onclick="redirigir()" class="btn btn-link" style="color: black;">&larr; Regresar a inicio</a>
+            <img src="./views/plantilla/img/inicio.png" alt="" id="img" class="img-fluid">
         </a>
         <h1 class="my-4 text-center" style="color: red;">¿Quiénes somos?</h1>
         <div class="content" style="background-color: rgb(231, 236, 236);">
@@ -19,7 +19,7 @@
                     <p>Trabajamos para hacer crecer la comunidad de mujeres exitosas, independientes y, sobre todo, poderosas: aquellas que serán agentes de cambio y transformación en sus propias vidas.</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="../img/muj.png" alt="Nuestro compromiso" class="img-fluid">
+                    <img src="./views/plantilla/img/muj.png" alt="Nuestro compromiso" class="img-fluid">
                 </div>
             </div>
             <div class="row section my-4">
@@ -28,7 +28,7 @@
                     <p>Una comunidad de mujeres poderosas que cambia vidas a través de productos de belleza de alta calidad y eficacia, una oportunidad de emprendimiento única y ayudando a desarrollar la autoestima de miles de mujeres.</p>
                 </div>
                 <div class="col-md-6 order-md-1">
-                    <img src="../img/esk.png" alt="Esika Lebel Cyzone" class="img-fluid" style="margin-bottom: 40px;">
+                    <img src="./views/plantilla/img/esk.png" alt="Esika Lebel Cyzone" class="img-fluid" style="margin-bottom: 40px;">
                 </div>
             </div>
             <div class="row section my-4">
@@ -37,7 +37,7 @@
                     <p>Nuestros productos de belleza de reconocida calidad marcan tendencia en cosmética, perfumería y joyería. Resultados probados y fórmulas de alta eficacia que cuidan tu piel.</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="../img/crem.png" alt="Innovación y calidad" class="img-fluid" style="margin-bottom: 40px;">
+                    <img src="./views/plantilla/img/crem.png" alt="Innovación y calidad" class="img-fluid" style="margin-bottom: 40px;">
                 </div>
             </div>
             <div class="row section my-4">
@@ -46,7 +46,7 @@
                     <p>Impactamos positivamente en cada uno de nuestros principales grupos de interés. Anímate a conocer más de lo que hacemos.</p>
                 </div>
                 <div class="col-md-6 order-md-1">
-                    <img src="../img/grup.png" alt="Las personas nos importan" class="img-fluid" style="margin-bottom: 80px;">
+                    <img src="./views/plantilla/img/grup.png" alt="Las personas nos importan" class="img-fluid" style="margin-bottom: 80px;">
                 </div>
             </div>
         </div>

@@ -60,7 +60,7 @@
                              
                           </div> 
                             <p class="card-text"style="text-align: center;">s/85.00</p>
-                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Agregar</a>
+                            <a href="<?php echo BASE_URL; ?>descripcion" class="btn btn-primary"style="margin-left: 60px;"> Ver detalle</a>
                           </div>
                       </div>
                     </div>
@@ -74,7 +74,7 @@
                              
                           </div> 
                             <p class="card-text"style="text-align: center;">s/85.00</p>
-                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Agregar</a>
+                            <a href="<?php echo BASE_URL; ?>descripcion" class="btn btn-primary"style="margin-left: 60px;">Ver detalle</a>
                           </div>
                       </div>
                     </div>
@@ -88,7 +88,7 @@
                              
                           </div> 
                             <p class="card-text"style="text-align: center;">s/85.00</p>
-                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Agregar</a>
+                            <a href="<?php echo BASE_URL; ?>descripcion" class="btn btn-primary"style="margin-left: 60px;"> Ver detalle</a>
                           </div>
                       </div>
                     </div>
@@ -102,7 +102,7 @@
                              
                           </div> 
                             <p class="card-text"style="text-align: center;">s/85.00</p>
-                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Agregar</a>
+                            <a href="<?php echo BASE_URL; ?>descripcion" class="btn btn-primary"style="margin-left: 60px;"> Ver detalle</a>
                           </div>
                       </div>
                     </div>
@@ -116,7 +116,7 @@
                              
                           </div> 
                             <p class="card-text"style="text-align: center;">s/85.00</p>
-                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Agregar</a>
+                            <a href="<?php echo BASE_URL; ?>descripcion" class="btn btn-primary"style="margin-left: 60px;"> Ver detalle</a>
                           </div>
                       </div>
                     </div>
@@ -130,7 +130,7 @@
                              
                           </div> 
                             <p class="card-text"style="text-align: center;">s/85.00</p>
-                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Agregar</a>
+                            <a href="<?php echo BASE_URL; ?>descripcion" class="btn btn-primary"style="margin-left: 60px;"> Ver detalle</a>
                           </div>
                       </div>
                     </div>
@@ -144,7 +144,7 @@
                              
                           </div> 
                             <p class="card-text"style="text-align: center;">s/85.00</p>
-                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Agregar</a>
+                            <a href="<?php echo BASE_URL; ?>descripcion" class="btn btn-primary"style="margin-left: 60px;"> Ver detalle</a>
                           </div>
                       </div>
                     </div>
@@ -158,7 +158,7 @@
                              
                           </div> 
                             <p class="card-text"style="text-align: center;">s/85.00</p>
-                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Agregar</a>
+                            <a href="<?php echo BASE_URL; ?>descripcion" class="btn btn-primary"style="margin-left: 60px;"> Ver detalle</a>
                           </div>
                       </div>
                     </div>

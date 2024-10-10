@@ -3,60 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
 
 <body>
-    <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg" style="background-color:#F5A5EC ">
-            <div class="container-fluid row d-block">
-                <div class="col-12 row">
-                    <a class="navbar-brand col-1" href="<?php echo BASE_URL; ?>esika"style=" width: 70px;"  >
-                        <img src="./views/plantilla/img/esika.png" alt="Bootstrap"
+  <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg" style="background-color:#F5A5EC ">
+        <div class="container-fluid row d-block">
+            <div class="col-12 row">
+                <a class="navbar-brand col-1" href="esika.html"style=" width: 70px;"  >
+                    <img src="./views/plantilla/img/esika.png" alt="Bootstrap"
+                        width="80" height="40">
+                    </a>
+                    <a class="navbar-brand col-1" href="lbel.html"style=" width: 70px; margin-left: -10px; ">
+                        <img src="./views/plantilla/img/lbel.png" alt="Bootstrap"
                             width="80" height="40">
                         </a>
-                        <a class="navbar-brand col-1" href="<?php echo BASE_URL; ?>lbel" style=" width: 70px;">
-                            <img src="./views/plantilla/img/lbel.png" alt="Bootstrap"
+                        <a class="navbar-brand col-1" href="cyzone.html" style=" width: 70px; margin-left: -10px;">
+                            <img src="./views/plantilla/img/cyzone.png" alt="Bootstrap"
                                 width="80" height="40">
-                            </a>
-                            <a class="navbar-brand col-1" href="<?php echo BASE_URL; ?>cyzone" style=" width: 70px;">
-                                <img src="./views/plantilla/img/cyzone.png" alt="Bootstrap"
-                                    width="80" height="40">
-                                </a>  
-                    <form class="d-flex col-5" role="search" style="margin-left:100px;">
-                        <input class="form-control me-2" type="text" placeholder="Estoy buscando....." aria-label="Search">
-                    </form>
-                    <div class="row justify-content-end ">
-                      <div class="col-auto"  style="margin-top: -45px;">
-                        <a href="html/formularioderegistro.html" style="color: black;text-decoration: none">
-                        | Quiero ser <br>
-                        consultora
-                        </a>
-                      </div>
-                      <div class="col-auto" style="margin-top: -45px;">
-                        <a href="html/login.html" style="color: black;text-decoration: none">
-                          <img src="./views/plantilla/img/usu.png" class="profile-pic" width="30px" height="auto">
-                          Inicia sesion
-                        </a>
-                      </div>
-                      <div class="col-auto " style="margin-top: -50px;">
-                        <a href="html/carri.html">
-                          <img  src="./views/plantilla/img/carrito.png " class="profile-pic" width="40px" height="auto" >
-                        </a>                         
-                      </div>
-                      
+                            </a>  
+                <form class="d-flex col-5" role="search" style="margin-left:100px;">
+                    <input class="form-control me-2" type="text" placeholder="Estoy buscando....." aria-label="Search">
+                </form>
+                <div class="row justify-content-end">
+                  <div class="col-auto" style="margin-top: -42px; justify-content: center;">
+                    <a href="<?php echo BASE_URL; ?>descripcion">
+                        <img src="./views/plantilla/img/megus.png" class="profile-pic" width="50" height="30">
+                    </a>
                   </div>
-                </div>
-                <div class="col-12 d-flex">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Tratamiento Facial
-                                </a>
-                                <ul class="dropdown-menu">
+                  <div class="col-auto  "style="margin-top: -50px;">
+                    <a href="<?php echo BASE_URL; ?>carrito">
+                      <img src="./views/plantilla/img/carrito.png" class="profile-pic"width="45" height="45" >
+                    </a>                         
+                  </div>
+                  <div class="col-auto"style="margin-top: -45px;">
+                    <a href="<?php echo BASE_URL; ?>perfil">
+                      <img src="./views/plantilla/img/usu.png" class="profile-pic" width="35" height="35">
+                    </a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-12 d-flex">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Tratamiento Facial
+                            </a>
+                            <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href=""> <h5>Limpieza Facial</h5></a>
                                         <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto1"><p>Desmaquillador</p></a>
                                         <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto1"><p>Esfoliante facial</p></a>
@@ -147,19 +144,19 @@
                                     </li>
                                 </ul>
                             </li>
-                            <a style="margin-left: 250px;" class="nav-link " href="html/sobrenosotros.html" role="button" 
+                            <a style="margin-left: 250px;" class="nav-link " href="<?php echo BASE_URL; ?>sobrenosotros" role="button" 
                         aria-expanded="false">
                        | Sobre nostros
                     </a>
-                    <a class="nav-link " href="html/contactanos.html" role="button" 
+                    <a class="nav-link " href="<?php echo BASE_URL; ?>contactanos" role="button" 
                         aria-expanded="false">
                        | Contactenos
                     </a>
-                    <a class="nav-link " href="html/formularioderegistro.html" role="button" 
+                    <a class="nav-link " href="<?php echo BASE_URL; ?>formulario" role="button" 
                         aria-expanded="false">
                        | Quiero ser consultora
                     </a>
                         </ul>
-                    </div>
-        </nav>
-    </div>
+                </div>
+    </nav>
+</div>

@@ -25,17 +25,17 @@
             <h2 class="font-weight-bold">Contactate con nosotros, estamos para ayudarte</h2>
             <div class="row">
                 <div class="col-md-4 contact-method">
-                    <img src="../img/escribenos.png" alt="Email Icon"width="50" height="50">
+                    <img src="./views/plantilla/img/escribenos.png" alt="Email Icon"width="50" height="50">
                     <h6>Escribenos</h6>
                     <p><a href="mailto:avalosyanet@gmail.com">avalosyanet@gmail.com</a></p>
                 </div>
                 <div class="col-md-4 contact-method " >
-                    <img src="../img/contactanos.png"  alt="Chat Icon" width="50" height="50" >
+                    <img src="./views/plantilla/img/contactanos.png"  alt="Chat Icon" width="50" height="50" >
                     <h6>Chateanos</h6>
                     <p>Horarios de atencion:<br>Lunes a Sabado<br>8:00 am a 8:00 pm</p>
                 </div>
                 <div class="col-md-4 contact-method">
-                    <img src="../img/llamada.png" alt="Phone Icon" width="50" height="50">
+                    <img src="./views/plantilla/img/llamada.png" alt="Phone Icon" width="50" height="50">
                     <h6>Llamanos</h6>
                     <p>910522787</p>
                 </div>
@@ -43,7 +43,7 @@
             <div class="row">
                 <div class="col-12">
                     <h4>¿Quieres vender producto?</h4>
-                    <button class="btn btn-dark"> <a href="formularioderegistro.html" style="text-decoration: none; color: white;">Quiero ser consultora</a></button>
+                    <button class="btn btn-dark"> <a href="<?php echo BASE_URL; ?>formulario" style="text-decoration: none; color: white;">Quiero ser consultora</a></button>
                 </div>
             </div>
             <div class="row mt-4">

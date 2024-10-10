@@ -75,7 +75,7 @@
                   </div>
                 </div>
                 <a href="" class="btn " style="background-color: #f79be0; margin-top:50px;">PROCEDER EL PAGO</a> <br> <br>
-                <a href="esika.html" class="btn " style="background-color: #f79be0;">SEGUIR COMPRANDO</a>
+                <a href="<?php echo BASE_URL; ?>esika" class="btn " style="background-color: #f79be0;">SEGUIR COMPRANDO</a>
               </div>
             </div>
           </div>
