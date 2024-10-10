@@ -173,7 +173,7 @@
                       <div class="card-body " style="text-align: start;">
                     
                         <h5 class="card-title mb-2">Salvaje Colonia para Hombre, 90 ml</h5>
-                        <p class="card-text">S/ 88<span class="discount"> <s class="text-muted">S/ 153</s></span></p>
+                        <p class="card-text">S/ 8<span class="discount"> <s class="text-muted">S/ 153</s></span></p>
                       
                         <a href="<?php echo BASE_URL; ?>descripcion" class="btn btn-primary"style="margin-left: 60px;"> Ver detalle </a>
                       </div>

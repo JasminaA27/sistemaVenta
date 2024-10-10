@@ -7,31 +7,31 @@
                       <h5>Labial</h5>
                       <button class="btn btn-outline-dark mb-3">Limpiar todo</button>
                       
-                     
+                      <!-- Lineas -->
                       <div class="filter-section" id="filter-lineas">
                         <h6 data-toggle="collapse" data-target="#lineas-options">Lineas</h6>
                         <div id="lineas-options" class="collapse show">
-                        
+                          <!-- Opciones de Lineas aquí -->
                         </div>
                       </div>
                       
-                     
+                      <!-- Lugar Aplicacion -->
                       <div class="filter-section" id="filter-lugar-aplicacion">
                         <h6 data-toggle="collapse" data-target="#lugar-aplicacion-options">Lugar Aplicacion</h6>
                         <div id="lugar-aplicacion-options" class="collapse show">
-                          
+                          <!-- Opciones de Lugar Aplicacion aquí -->
                         </div>
                       </div>
                       
-                     
+                      <!-- Necesidad -->
                       <div class="filter-section" id="filter-necesidad">
                         <h6 data-toggle="collapse" data-target="#necesidad-options">Necesidad</h6>
                         <div id="necesidad-options" class="collapse show">
-                          
+                          <!-- Opciones de Necesidad aquí -->
                         </div>
                       </div>
                       
-                     
+                      <!-- Gama de Precios -->
                       <div class="filter-section" id="filter-gama-precios">
                         <h6 data-toggle="collapse" data-target="#gama-precios-options">Gama de Precios</h6>
                         <div id="gama-precios-options" class="collapse show">
@@ -60,7 +60,7 @@
                              
                           </div> 
                             <p class="card-text"style="text-align: center;">s/85.00</p>
-                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Ver detalle</a>
+                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Agregar</a>
                           </div>
                       </div>
                     </div>
@@ -74,7 +74,7 @@
                              
                           </div> 
                             <p class="card-text"style="text-align: center;">s/85.00</p>
-                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Ver detalle</a>
+                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Agregar</a>
                           </div>
                       </div>
                     </div>
@@ -93,7 +93,7 @@
                              
                           </div> 
                             <p class="card-text"style="text-align: center;">s/85.00</p>
-                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Ver detalle</a>
+                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Agregar</a>
                           </div>
                       </div>
                     </div>
@@ -107,7 +107,7 @@
                              
                           </div> 
                             <p class="card-text"style="text-align: center;">s/85.00</p>
-                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Ver detalle</a>
+                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Agregar</a>
                           </div>
                       </div>
                     </div>
@@ -126,7 +126,7 @@
                              
                           </div> 
                             <p class="card-text"style="text-align: center;">s/85.00</p>
-                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Ver detalle</a>
+                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Agregar</a>
                           </div>
                       </div>
                     </div>
@@ -140,7 +140,7 @@
                              
                           </div> 
                             <p class="card-text"style="text-align: center;">s/85.00</p>
-                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Ver detalle</a>
+                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Agregar</a>
                           </div>
                       </div>
                     </div>
@@ -154,7 +154,7 @@
                              
                           </div> 
                             <p class="card-text"style="text-align: center;">s/85.00</p>
-                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Ver detalle</a>
+                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Agregar</a>
                           </div>
                       </div>
                     </div>
@@ -168,7 +168,7 @@
                              
                           </div> 
                             <p class="card-text"style="text-align: center;">s/85.00</p>
-                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Ver detalle</a>
+                            <a href="#" class="btn btn-primary"style="margin-left: 60px;"> Agregar</a>
                           </div>
                       </div>
                     </div>
