@@ -52,7 +52,7 @@
                 <div class="container-fluid m-0 p-3 mt-2 row">
                     <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                         <div class="card ">
-                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/310743-500-auto?v=638556162249100000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
+                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/315543-500-auto?v=638617518422600000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"style="text-align: center;">Vibranza Blanc Perfume de Mujer, 45 ml</h5>
                             <div class="star"style="margin-left: 60px;">
@@ -66,7 +66,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                         <div class="card ">
-                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/310749-500-auto?v=638556162401630000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
+                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/315532-500-auto?v=638617518189430000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"style="text-align: center;">Vibranza Blanc Perfume de Mujer, 45 ml</h5>
                             <div class="star"style="margin-left: 60px;">
@@ -80,7 +80,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                         <div class="card ">
-                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/310560-500-auto?v=638555322201800000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
+                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/315538-500-auto?v=638617518321030000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"style="text-align: center;">Vibranza Blanc Perfume de Mujer, 45 ml</h5>
                             <div class="star"style="margin-left: 60px;">
@@ -94,7 +94,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                         <div class="card ">
-                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/310566-500-auto?v=638555322359400000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
+                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/315524-500-auto?v=638616900163670000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"style="text-align: center;">Vibranza Blanc Perfume de Mujer, 45 ml</h5>
                             <div class="star"style="margin-left: 60px;">

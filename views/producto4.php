@@ -52,7 +52,7 @@
                 <div class="container-fluid m-0 p-3 mt-2 row">
                     <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                         <div class="card ">
-                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/311004-500-auto?v=638563158186530000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
+                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/316134-500-auto?v=638623578166700000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"style="text-align: center;">Kalos Sport Perfume de Hombre, 100 ml</h5>
                             <div class="star"style="margin-left: 60px;">
@@ -66,7 +66,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                         <div class="card ">
-                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/310900-500-auto?v=638562282189700000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
+                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/316121-500-auto?v=638623566186930000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"style="text-align: center;">Kromo Fire Perfume de Hombre, 90 ml</h5>
                             <div class="star"style="margin-left: 60px;">
@@ -80,7 +80,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                         <div class="card ">
-                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/310911-500-auto?v=638562288228700000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
+                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/310921-500-auto?v=638562300335570000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"style="text-align: center;">D'orsay Inspire Perfume , 90 ml</h5>
                             <div class="star"style="margin-left: 60px;">
@@ -94,7 +94,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                         <div class="card ">
-                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/310921-500-auto?v=638562300335570000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
+                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/310917-500-auto?v=638562300196270000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"style="text-align: center;">Uno-Perfume-para-Hombre-90-mll</h5>
                             <div class="star"style="margin-left: 60px;">
@@ -136,7 +136,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                         <div class="card ">
-                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/275884-500-auto?v=638271306184900000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
+                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/313670-500-auto?v=638592552256270000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"style="text-align: center;">Pulso Absolute Perfume , 100 ml</h5>
                             <div class="star"style="margin-left: 60px;">
@@ -150,7 +150,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                         <div class="card ">
-                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/303945-500-auto?v=638507670261730000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
+                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/316246-500-auto?v=638628024146330000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"style="text-align: center;">Magnat Exclusive Perfume, 90 ml</h5>
                             <div class="star"style="margin-left: 60px;">

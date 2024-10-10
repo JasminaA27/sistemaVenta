@@ -52,7 +52,7 @@
                 <div class="container-fluid m-0 p-3 mt-2 row">
                     <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                         <div class="card ">
-                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/310625-500-auto?v=638555388855100000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
+                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/279515-500-auto?v=638295456113100000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"style="text-align: center;">Mega Full Size Máscara de Pestañas Fácil Retirado </h5>
                             <div class="star"style="margin-left: 60px;">
@@ -136,7 +136,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                         <div class="card ">
-                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/310618-500-auto?v=638555388690100000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
+                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/315478-500-auto?v=638616000185800000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"style="text-align: center;">Mega Full Size Máscara de Pestañas Fácil Retirado</h5>
                             <div class="star"style="margin-left: 60px;">
