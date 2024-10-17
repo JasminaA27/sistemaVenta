@@ -37,4 +37,4 @@
     </div>
     <button type="submit" class="btn btn-info ">Registrar</button>
 </form>
-<script src="php<? echo BASE_URL;?> views/js/functionsProducto.js";></script>
+<script src="<?php echo BASE_URL;?>views/js/functionsProducto.js"></script>
