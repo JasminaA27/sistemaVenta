@@ -6,7 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
-
+<SCript>
+    const base_url = '<?php echo BASE_URL;?>';
+</SCript>
 <body>
   <div class="container-fluid p-0">
     <nav class="navbar navbar-expand-lg" style="background-color:#F5A5EC ">

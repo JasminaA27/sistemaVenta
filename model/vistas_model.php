@@ -32,7 +32,7 @@ class vistaModelo
         } elseif ($vista == "libroreclam") {
             $contenido = "libroreclam";
         }else{
-            
+
             $contenido = "404";
         }
         return $contenido;
