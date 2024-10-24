@@ -23,8 +23,26 @@ async function registrarProducto() {
         cache: 'no-cache',
         body: datos
     });
-    console.log(respuesta);
+    json = await respuesta.json();
+    if(json.status){
+        swal("registro", json.mensaje, "success");
+    }else{
+        swal("registro", json.mensaje, "error");
+    }
+
+    console.log(json);
    } catch (e){
     console.log("Oops, ocurrio un error"+e);
    }
+}
+
+async function listar_categorias() {
+    try{
+        let respuesta = await fetch(base_url+'controller/categoria.php?tipo=listar');
+
+        console.log(respuesta);
+
+    }catch(e){
+        console.log("Error al cargar categorias"+e);
+    }
 }

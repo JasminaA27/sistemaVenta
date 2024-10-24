@@ -41,3 +41,4 @@
 </div>
 
 <script src="<?php echo BASE_URL;?>views/js/functionsProducto.js"></script>
+<script>listar_categorias();</script>

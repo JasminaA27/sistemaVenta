@@ -36,12 +36,12 @@ if($tipo=="registrar"){
                 ('status'=>true,
                 'mensaje'=>'Registro exitoso');
             }else{
-                $arr_Respuesta = array('status'=>true,
+                $arr_Respuesta = array('status'=>false,
                 'mensaje'=> 'Error al registrar producto');
             }
             echo json_encode($arr_Respuesta);
 
-            
+
         }
     }
 }
