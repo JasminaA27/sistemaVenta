@@ -22,7 +22,9 @@
         </div>
         <div class="form-group">
             <label for="categoria">Categoría:</label>
-            <input type="text" class="form-control" id="categoria" name= "categoria" required>
+            <select name="categoria" id="categoria"class="form-control" required>
+            <option>Seleccione</option>
+            </select>
         </div>
         <div class="form-group">
             <label for="fecha_ven">Fecha de Vencimiento:</label>
