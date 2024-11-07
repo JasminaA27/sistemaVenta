@@ -23,7 +23,7 @@
         <div class="form-group">
             <label for="categoria">Categoría:</label>
             <select name="categoria" id="categoria"class="form-control" required>
-            <option>Seleccione</option>
+            <option>Seleccione una categoria</option>
             </select>
         </div>
         <div class="form-group">
@@ -36,7 +36,9 @@
         </div>
         <div class="form-group">
             <label for="proveedor">Proveedor:</label>
-            <input type="number" class="form-control" id="proveedor" name= "proveedor" required>
+            <select name= "proveedor" id="proveedor" class="form-control" required>
+                <option>Seleccione un proveedor</option>
+            </select>
         </div>
         <button type="button" class="btn btn-success" onclick="registrarProducto();">Registrar</button>
     </form>
@@ -44,3 +46,4 @@
 
 <script src="<?php echo BASE_URL;?>views/js/functionsProducto.js"></script>
 <script>listar_categorias();</script>
+<script>listar_personas();</script>

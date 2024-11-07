@@ -1,11 +1,11 @@
 <?php
 require_once('../model/categoriaModel.php');
 
-$tipo = $_REQUEST['tipo'];
 
 //instanciar la clase categoria model
 
 $objcategoria = new categoriaModel();
+$tipo = $_REQUEST['tipo'];
 
 if ($tipo=="listar"){
     //respuesta

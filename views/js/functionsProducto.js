@@ -42,17 +42,48 @@ async function listar_categorias() {
         json = await respuesta.json();
         if (json.status) {
             let datos = json.contenido;
+            let contenido_select = '<option value = "">Seleccione una categoria</option>';
+
             datos.forEach(element => {
-                $('#categoria').append($('<option />'),{
+                contenido_select += '<option value="'+ element.id +'">' + element.nombre + '</option>';
+                
+            });
+            // este codigo es para trabajar con jquery
+
+             /*datos.forEach(element => {
+                $('#categoria').append($('<option />',{
                     text:`${element.nombre}`,
                     value: `${element.id}`
-                });
-            });
+                }));
+            });*/
+            document.getElementById('categoria').innerHTML = contenido_select;
         }
 
         console.log(respuesta);
 
     }catch(e){
         console.log("Error al cargar categorias"+e);
+    }
+}
+
+async function listar_personas() {
+    try{
+        let respuesta = await fetch(base_url+'controller/persona.php?tipo=listar');
+        json = await respuesta.json();
+        if (json.status) {
+            let datos = json.contenido;
+            let contenido_select = '<option value = "">Seleccione proveedor </option>';
+
+            datos.forEach(element => {
+                contenido_select += '<option value="' + element.id + '">' + element.razon_social + '</option>';
+                
+            });
+            document.getElementById('proveedor').innerHTML = contenido_select;
+        }
+
+        console.log(respuesta);
+
+    }catch(e){
+        console.log("Error al cargar personas"+e);
     }
 }
