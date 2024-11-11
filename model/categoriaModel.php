@@ -18,4 +18,15 @@ class categoriaModel{
         }
         return $arrRespuesta;
     }
+
+    // registrar categoria 
+    
+    public function registrarCategoria($nombre, $detalle) {
+        // Llamada al procedimiento almacenado que inserta una categoría
+        $sql = $this->conexion->query("CALL insertCategoria('{$nombre}', '{$detalle}')");
+        
+        // Se obtiene el objeto de resultado
+        $sql = $sql->fetch_object();
+        return $sql;
+    }
 }

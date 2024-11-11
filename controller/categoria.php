@@ -1,6 +1,43 @@
 <?php
 require_once('../model/categoriaModel.php');
+$tipo = $_REQUEST['tipo'];
 
+// Instancio la clase CategoriaModel
+$objCategoria = new CategoriaModel();
+
+if ($tipo == "registrar") {
+    if ($_POST) {
+        // Capturamos los datos enviados desde el formulario
+        $nombre = $_POST['nombre'];
+        $detalle = $_POST['detalle'];
+
+        // Validación de campos vacíos
+        if ($nombre == "" || $detalle == "") {
+            // Respuesta si hay campos vacíos
+            $arr_Respuesta = array(
+                'status' => false,
+                'mensaje' => 'Error, campos vacíos'
+            );
+        } else {
+            // Llamada al método del modelo para registrar la categoría
+            $arrCategoria = $objCategoria->registrarCategoria($nombre, $detalle);
+
+            // Comprobamos si el registro fue exitoso
+            if ($arrCategoria->id > 0) {
+                $arr_Respuesta = array(
+                    'status' => true,
+                    'mensaje' => 'Categoría registrada exitosamente'
+                );
+            } else {
+                $arr_Respuesta = array(
+                    'status' => false,
+                    'mensaje' => 'Error al registrar categoría'
+                );
+            }
+        }
+        echo json_encode($arr_Respuesta);
+    }
+}
 
 //instanciar la clase categoria model
 
