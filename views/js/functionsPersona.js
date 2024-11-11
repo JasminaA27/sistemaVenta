@@ -25,7 +25,7 @@ async function registrarPersona() {
 
     try {
         // Capturamos los datos del formulario HTML
-        const frmRegistrar = document.getElementById('frmRegistrar');
+        
         const datos = new FormData(frmRegistrar);
 
         // Enviar los datos hacia el controlador mediante el método POST

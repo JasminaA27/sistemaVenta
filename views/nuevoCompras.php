@@ -2,6 +2,9 @@
     <form action="" class="p-4 border rounded shadow" id="frmRegistrarCompras">
         <div class="form-group">
             <label for="id_producto">ID Producto:</label>
+            <select name= "id_producto" id="id_producto" class="form-control" required>
+                <option>Seleccione un producto</option>
+            </select>
             <input type="text" class="form-control" id="id_producto" name="id_producto" required>
         </div>
         <div class="form-group">
@@ -18,9 +21,14 @@
         </div>
         <div class="form-group">
             <label for="id_trabajador">ID Trabajador:</label>
-            <input type="text" class="form-control" id="id_trabajador" name="id_trabajador" required>
+            <select name= "id_trabajador" id="id_trabajador" class="form-control" required>
+                <option>Seleccione un Trabajador</option>
+            </select>
         </div>
+      
         <button type="button" class="btn btn-success" onclick="registrarCompras();">Registrar</button>
     </form>
 </div>
 <script src="<?php echo BASE_URL;?>views/js/functionsCompras.js"></script>
+<script>listar_productos();</script>
+<script>listar_trabajadores();</script>

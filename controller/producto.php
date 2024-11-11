@@ -63,4 +63,26 @@ if($tipo=="registrar"){
         }
     }
 }
+
+//instanciar la clase categoria model
+$tipo = $_REQUEST['tipo'];
+
+if ($tipo=="listar"){
+    //respuesta
+    $arr_Respuesta = array('status'=>false,'contenido'=>'');
+    $arr_Producto = $objProducto->obtener_productos();
+    if (!empty($arr_Producto)) {
+        // recordemos el array para agregar las opciones de las categorias
+        for ($i=0; $i < count($arr_Producto); $i++) { 
+            $id_personas = $arr_Producto[$i]->id;
+            $nombre = $arr_Producto[$i]->nombre;
+            $opciones = '';
+            $arr_Producto[$i] ->options = $opciones;
+        }
+        $arr_Respuesta['status']= true;
+        $arr_Respuesta['contenido']= $arr_Producto;
+    }
+    echo json_encode($arr_Respuesta);
+
+}
 ?>
