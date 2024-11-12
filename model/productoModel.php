@@ -20,6 +20,7 @@ class ProductoModel{
         $sql = $this->conexion->query("UPDATE producto SET imagen='{$imagen}' WHERE id= '{$id}'");
         return 1;
     }
+    
 
 }
 

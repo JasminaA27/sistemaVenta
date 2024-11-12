@@ -15,7 +15,7 @@ async function registrarCompras() {
         alert("Error: ¡Hay campos vacíos!");
         return;
     }
-    
+
     try {
         // Capturamos los datos del formulario HTML
         const frmRegistrarCompras = document.getElementById('frmRegistrarCompras');
@@ -41,5 +41,49 @@ async function registrarCompras() {
         console.log(json);
     } catch (e) {
         console.log("Oops, ocurrió un error: " + e);
+    }
+}
+async function listar_producto() {
+    try{
+        let respuesta = await fetch(base_url+'controller/producto.php?tipo=listar');
+        json = await respuesta.json();
+        if (json.status) {
+            let datos = json.contenido;
+            let contenido_select = '<option value = "">Seleccione una producto</option>';
+
+            datos.forEach(element => {
+                contenido_select += '<option value="'+ element.id +'">' + element.nombre + '</option>';
+                
+            });
+            
+            document.getElementById('id_producto').innerHTML = contenido_select;
+        }
+
+        console.log(respuesta);
+
+    }catch(e){
+        console.log("Error al cargar producto"+e);
+    }
+}
+
+async function listar_trabajador() {
+    try{
+        let respuesta = await fetch(base_url+'controller/trabajador.php?tipo=listar');
+        json = await respuesta.json();
+        if (json.status) {
+            let datos = json.contenido;
+            let contenido_select = '<option value = "">Seleccione trabajador </option>';
+
+            datos.forEach(element => {
+                contenido_select += '<option value="' + element.id + '">' + element.razon_social + '</option>';
+                
+            });
+            document.getElementById('proveedor').innerHTML = contenido_select;
+        }
+
+        console.log(respuesta);
+
+    }catch(e){
+        console.log("Error al cargar personas"+e);
     }
 }
