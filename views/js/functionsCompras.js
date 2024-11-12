@@ -15,7 +15,7 @@ async function registrarCompras() {
         alert("Error: ¡Hay campos vacíos!");
         return;
     }
-
+    
     try {
         // Capturamos los datos del formulario HTML
         const frmRegistrarCompras = document.getElementById('frmRegistrarCompras');

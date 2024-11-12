@@ -52,7 +52,7 @@
                 <div class="container-fluid m-0 p-3 mt-4 row">
                     <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                         <div class="card ">
-                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/315512-500-auto?v=638616048110000000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
+                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/318364-500-auto?v=638647734178400000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"style="text-align: center;">Desmaquillador Bifásico</h5>
                             <div class="star">
@@ -67,7 +67,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                         <div class="card ">
-                        <img src="https://belcorpperu.vtexassets.com/arquivos/ids/259146-500-auto?v=638242296371100000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
+                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/311691-500-auto?v=638574570233430000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"style="text-align: center;">Agua Micelar 5 en 1 Triple Acción</h5>
                             <div class="star"style="margin-left: 60px;">

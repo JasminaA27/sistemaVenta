@@ -5,7 +5,6 @@
             <select name= "id_producto" id="id_producto" class="form-control" required>
                 <option>Seleccione un producto</option>
             </select>
-            <input type="text" class="form-control" id="id_producto" name="id_producto" required>
         </div>
         <div class="form-group">
             <label for="cantidad">Cantidad:</label>
