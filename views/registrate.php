@@ -10,7 +10,7 @@
     <div class="container mt-5" >
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <div class="card" style="background-color:#d3a1c5">
+                <div class="card" style="background-color:#F5A5EC">
                     <div class="card-body">
                         <a href="<?php echo BASE_URL; ?>login"onclick="redirigir()" class="btn btn-link" style="color: black; text-decoration: none">&larr; Regresar </a>
                         <h2 class="mt-3">Creación de cuenta</h2>
@@ -58,7 +58,7 @@
                                     Acepto <a href="#" class="text-decoration-none">Términos y Condiciones</a> y <a href="#" class="text-decoration-none">Política de privacidad</a>.
                                 </label>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100" style="background-color: #c74fa5; border: #c74fa5;"> <a href="<?php echo BASE_URL; ?>login" style="text-decoration: none; color: black;">Continuar</a></button>
+                            <button type="submit" class="btn btn-primary w-100" style="background-color: #c74fa5; border:  #080808;"> <a href="<?php echo BASE_URL; ?>login" style="text-decoration: none; color: black;">Continuar</a></button>
                         </form>
                     </div>
                 </div>
