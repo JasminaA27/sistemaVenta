@@ -10,9 +10,9 @@ class comprasModel {
         $this->conexion = new Conexion();
         $this->conexion = $this->conexion->connect();
     }
-    public function obtener_compras(){
+    public function obtener_productos(){
         $arrRespuesta = array();
-        $respuesta = $this->conexion->query("SELECT * FROM compras");
+        $respuesta = $this->conexion->query("SELECT * FROM producto");
         while($objeto = $respuesta->fetch_object()){
             array_push($arrRespuesta,$objeto);
         }

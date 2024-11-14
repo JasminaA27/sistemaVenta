@@ -111,5 +111,7 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+<script src="<?php echo BASE_URL;?>views/js/functionsLogin.js"></script>
+
 <!-- esto es para llamar con el otro codigo de internet con jquery <script src="<?php echo BASE_URL; ?>views/js/jquery-3.6.0.min.js"></script> -->
 </html>

@@ -2,7 +2,7 @@
 require_once('../model/categoriaModel.php');
 $tipo = $_REQUEST['tipo'];
 
-// Instancio la clase CategoriaModel
+
 $objCategoria = new CategoriaModel();
 
 if ($tipo == "registrar") {

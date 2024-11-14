@@ -10,7 +10,7 @@ class personaModel{
         $this->conexion = $this->conexion->connect();
     }
 
-    public function obtener_trabajador(){
+    public function obtener_trabajadores(){
         $arrRespuesta = array();
         $respuesta = $this->conexion->query("SELECT * FROM persona where rol='proveedor'");
         while($objeto = $respuesta->fetch_object()){

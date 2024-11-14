@@ -40,7 +40,7 @@
             <label for="rol">Rol:</label>
             <input type="text" class="form-control" id="rol" name="rol" required>
         </div>
-        <div class="form-group">
+        <!-- <div class="form-group">
             <label for="password">Contraseña:</label>
             <input type="password" class="form-control" id="password" name="password" required>
         </div>
@@ -51,7 +51,7 @@
         <div class="form-group">
             <label for="fecha_inicio">Fecha de Registro:</label>
             <input type="date" class="form-control" id="fecha_registro" name="fecha_registro" required>
-        </div>
+        </div>  -->
         <button type="button" class="btn btn-success" onclick="registrarPersona();">Registrar</button>
     </form>
 </div>

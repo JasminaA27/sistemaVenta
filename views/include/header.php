@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,6 +44,7 @@
                   <div class="col-auto"style="margin-top: -45px;">
                     <a href="<?php echo BASE_URL; ?>perfil">
                       <img src="./views/plantilla/img/usu.png" class="profile-pic" width="35" height="35">
+                      <li type ="nav2" a id= "cerr></li>
                     </a>
                   </div>
               </div>

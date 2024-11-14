@@ -11,14 +11,14 @@ async function registrarPersona() {
     let direccion = document.querySelector('#direccion').value;
     let rol = document.querySelector('#rol').value;
     let password = document.querySelector('#password').value;
-    let estado = document.querySelector('#estado').value;
-    let fecha_registro = document.querySelector('#fecha_registro').value;
+   
+   
 
     // Validación de campos vacíos
     if (nro_identidad === "" || razon_social === "" || telefono === "" || 
         correo === "" || departamento === "" || provincia === "" || 
         distrito === "" || cod_postal === "" || direccion === "" || 
-        rol === "" || password === "" || estado === "" || fecha_registro === ""
+        rol === "" || password === ""
     ) { alert("Error: ¡Hay campos vacíos!");
         return;
     }
