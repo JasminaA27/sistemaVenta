@@ -1,9 +1,10 @@
 <?php
 require_once('../model/categoriaModel.php');
+
+
+$objCategoria = new categoriaModel();
+
 $tipo = $_REQUEST['tipo'];
-
-
-$objCategoria = new CategoriaModel();
 
 if ($tipo == "registrar") {
     if ($_POST) {

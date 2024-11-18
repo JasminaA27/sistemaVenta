@@ -10,16 +10,13 @@ async function registrarPersona() {
     let cod_postal = document.querySelector('#cod_postal').value;
     let direccion = document.querySelector('#direccion').value;
     let rol = document.querySelector('#rol').value;
-    let password = document.querySelector('#password').value;
-   
    
 
     // Validación de campos vacíos
     if (nro_identidad === "" || razon_social === "" || telefono === "" || 
         correo === "" || departamento === "" || provincia === "" || 
         distrito === "" || cod_postal === "" || direccion === "" || 
-        rol === "" || password === ""
-    ) { alert("Error: ¡Hay campos vacíos!");
+        rol === ""  ) { alert("Error: ¡Hay campos vacíos!");
         return;
     }
 

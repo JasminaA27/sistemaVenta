@@ -66,9 +66,9 @@ async function listar_categorias() {
     }
 }
 
-async function listar_personas() {
+async function listar_proveedores() {
     try{
-        let respuesta = await fetch(base_url+'controller/persona.php?tipo=listar');
+        let respuesta = await fetch(base_url+'controller/persona.php?tipo=listar_proveedores');
         json = await respuesta.json();
         if (json.status) {
             let datos = json.contenido;
@@ -84,6 +84,6 @@ async function listar_personas() {
         console.log(respuesta);
 
     }catch(e){
-        console.log("Error al cargar personas"+e);
+        console.log("Error al cargar proveedor"+e);
     }
 }
