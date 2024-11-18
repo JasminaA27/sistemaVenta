@@ -44,7 +44,7 @@
                   <div class="col-auto"style="margin-top: -45px;">
                     <a href="<?php echo BASE_URL; ?>perfil">
                       <img src="./views/plantilla/img/usu.png" class="profile-pic" width="35" height="35">
-                      <li type ="nav2" a id= "cerr></li>
+                    
                     </a>
                   </div>
               </div>
@@ -160,7 +160,9 @@
                         aria-expanded="false">
                        | Quiero ser consultora
                     </a>
+                    <li><a class="dropdown-item" href="#" onclick="cerrar_sesion();">Cerrar Sesión</a></li>
                         </ul>
                 </div>
+                
     </nav>
 </div>

@@ -20,7 +20,7 @@ if ($tipo=="iniciar_sesion") {
             session_start();
             $_SESSION['sesion_ventas_id'] = $arrPersona->id;
             $_SESSION['sesion_ventas_dni'] = $arrPersona->nro_identidad;
-            $_SESSION['sesion_ventas_nombres'] $arrPersona->razon_social;
+            $_SESSION['sesion_ventas_nombres'] = $arrPersona->razon_social;
 
             $arrResponse= array('status'=>true, 'msg'=>'Ingresar al sistema');
         }else {

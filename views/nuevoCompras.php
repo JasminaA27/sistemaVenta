@@ -1,8 +1,8 @@
 <div class="container">
-    <form action="" class="p-4 border rounded shadow" id="frmRegistrarCompras">
+    <form action="" class="p-4 border rounded shadow" id="frmRegistrar">
         <div class="form-group">
-            <label for="id_producto">ID Producto:</label>
-            <select name= "id_producto" id="id_producto" class="form-control" required>
+            <label for="producto">ID Producto:</label>
+            <select name= "producto" id="producto" class="form-control" required>
                 <option>Seleccione un producto</option>
             </select>
         </div>
@@ -19,8 +19,8 @@
             <input type="date" class="form-control" id="fecha_compra" name="fecha_compra" required>
         </div>
         <div class="form-group">
-            <label for="id_trabajador">ID Trabajador:</label>
-            <select name= "id_trabajador" id="id_trabajador" class="form-control" required>
+            <label for="trabajador">ID Trabajador:</label>
+            <select name= "trabajador" id="trabajador" class="form-control" required>
                 <option>Seleccione un Trabajador</option>
             </select>
         </div>

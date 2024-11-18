@@ -88,7 +88,7 @@
                 <button class="btn btn-sm btn-secondary mt-2"style="background-color: #d3a1c5; border: #d3a1c5;">Editar</button>
                 <button class="btn btn-sm btn-primary mt-2" style="background-color: #d3a1c5; border: #d3a1c5;">Confirmar</button>
             </div>
-            <button class="btn btn-danger btn-block mt-4"> <a href="<?php echo BASE_URL; ?>index" style="text-decoration: none;color: black; ">Cerrar sesión</a></button>
+            <button class="btn btn-danger btn-block mt-4"> <a href="<?php echo BASE_URL; ?>principal" style="text-decoration: none;color: black; ">Cerrar sesión</a></button>
         </div>
     </div>
 

@@ -39,8 +39,9 @@ if ($tipo == "registrar") {
             $arrPersona = $objPersona->registrarPersona(
                 $nro_identidad, $razon_social, $telefono, $correo, 
                 $departamento, $provincia, $distrito, $cod_postal, 
-                $direccion, $rol, $password,
+                $direccion, $rol, $secure_password,
             );
+
 
             // Comprobamos si el registro fue exitoso
             if ($arrPersona->id > 0) {

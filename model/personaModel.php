@@ -24,7 +24,7 @@ class personaModel{
    $provincia, $distrito, $cod_postal, $direccion, $rol, $password) {
     // Llamada al procedimiento almacenado que inserta una categoría
     $sql = $this->conexion->query("CALL insertPersona('{$nro_identidad}', '{$razon_social}', '{$telefono}', 
-    '{$correo}', '{$departamento}', '{$provincia}', '{$distrito}', '{$cod_postal}', '{$direccion}', '{$rol}', '{$password}'");
+    '{$correo}', '{$departamento}', '{$provincia}', '{$distrito}', '{$cod_postal}', '{$direccion}', '{$rol}', '{$password}')");
     
     // Se obtiene el objeto de resultado
     $sql = $sql->fetch_object();
@@ -38,7 +38,7 @@ public function buscarPersonaPorDNI($dni){
 
 public function obtener_trabajadores(){
     $arrRespuesta = array();
-    $respuesta = $this->conexion->query("SELECT * FROM persona where rol='trabajdor'");
+    $respuesta = $this->conexion->query("SELECT * FROM persona where rol='trabajador'");
     while($objeto = $respuesta->fetch_object()){
         array_push($arrRespuesta,$objeto);
     }
