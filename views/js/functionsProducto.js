@@ -1,3 +1,39 @@
+async function listar_productos() {
+    try {
+        let respuesta = await fetch(base_url+'controller/producto.php?tipo=listar');
+        let json = await respuesta.json();
+        if (json.status) {
+            let datos = json.contenido;
+            let cont = 0;
+            datos.forEach(item=>{
+                let nueva_fila = document.createElement("tr");
+                nueva_fila.id= "fila"+item.id;// este es id que viene de la base de datos
+                cont+=1;
+                nueva_fila.innerHTML= `
+                <th>${cont}</th>
+                <td>${item.codigo}</td>
+                <td>${item.nombre}</td>
+                <td>${item.stock}</td>
+                <td>${item.categoria.nombre}</td>
+                <td>${item.proveedor.razon_social}</td>
+                <td> <button class="btn btn-outline-success" onclick="editarProducto(2)">Editar</button>
+                     <button class="btn btn-outline-danger" onclick="eliminarProducto(2)">Eliminar</button>
+                    </td>
+                `;
+               document.querySelector('#tbl_producto').appendChild(nueva_fila);
+            });
+        }
+        console.log(json);
+    } catch (error) {
+        console.log("Oops salio un error"+error);
+    }
+}
+ if (document.querySelector('#tbl_producto')) {
+    listar_productos();
+ }
+
+
+
 async function registrarProducto() {
     let codigo = document.getElementById('codigo').value;
     let nombre = document.querySelector('#nombre').value;
@@ -87,3 +123,4 @@ async function listar_proveedores() {
         console.log("Error al cargar proveedor"+e);
     }
 }
+

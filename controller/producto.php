@@ -1,9 +1,14 @@
 <?php
 require_once('../model/productoModel.php');
+require_once('../model/categoriaModel.php');
+require_once('../model/personaModel.php');
+
 $tipo = $_REQUEST['tipo'];
 
 //instancio la clase modeloproducto
 $objProducto = new ProductoModel();
+$objCategoria = new CategoriaModel();
+$objPersona = new PersonaModel();
 
 if($tipo=="registrar"){
     //print_r($_POST);
@@ -64,7 +69,7 @@ if($tipo=="registrar"){
     }
 }
 
-//instanciar la clase categoria model
+//listar la tabla productos
 $tipo = $_REQUEST['tipo'];
 
 if ($tipo=="listar"){
@@ -74,7 +79,20 @@ if ($tipo=="listar"){
     if (!empty($arr_Producto)) {
         // recordemos el array para agregar las opciones de las categorias
         for ($i=0; $i < count($arr_Producto); $i++) { 
-            $id_personas = $arr_Producto[$i]->id;
+
+            // para categoria
+            $id_categoria = $arr_Producto[$i]->id_categoria;
+            $r_categoria = $objCategoria->obtener_categoria ($id_categoria);
+            $arr_Producto[$i]->categoria=$r_categoria;
+
+
+            // para proveedor
+            $id_proveedor = $arr_Producto[$i]->id_proveedor;
+            $r_proveedor = $objPersona->obtener_proveedor ($id_proveedor);
+            $arr_Producto[$i]->proveedor=$r_proveedor;
+        
+
+            $id_producto = $arr_Producto[$i]->id;
             $nombre = $arr_Producto[$i]->nombre;
             $opciones = '';
             $arr_Producto[$i] ->options = $opciones;

@@ -44,5 +44,12 @@ public function obtener_trabajadores(){
     }
     return $arrRespuesta;
 }
+//funcion para obtener proveedor en tabla creada
+public function obtener_proveedor($id){
+    $respuesta= $this->conexion->query("SELECT * FROM persona WHERE id='{$id}'");
+    $objeto = $respuesta->fetch_object();
+    return $objeto;
 }
+}
+
 ?>
