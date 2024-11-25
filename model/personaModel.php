@@ -50,6 +50,18 @@ public function obtener_proveedor($id){
     $objeto = $respuesta->fetch_object();
     return $objeto;
 }
+
+
+
+// para obtener en tabla personas
+public function obtener_personas(){
+    $arrRespuesta = array();
+    $respuesta = $this->conexion->query("SELECT * FROM persona");
+    while($objeto = $respuesta->fetch_object()){
+        array_push($arrRespuesta,$objeto);
+    }
+    return $arrRespuesta;
+}
 }
 
 ?>

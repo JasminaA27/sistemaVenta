@@ -1,3 +1,43 @@
+async function listar_personas() {
+    try {
+        let respuesta = await fetch(base_url+'controller/persona.php?tipo=listar');
+        let json = await respuesta.json();
+        if (json.status) {
+            let datos = json.contenido;
+            let cont = 0;
+            datos.forEach(item=>{
+                let nueva_fila = document.createElement("tr");
+                nueva_fila.id= "fila"+item.id;// este es id que viene de la base de datos
+                cont+=1;
+                nueva_fila.innerHTML= `
+                <th>${cont}</th>
+                <td>${item.nro_identidad}</td>
+                <td>${item.nombre}</td>
+                <td>${item.telefono}</td>
+                <td>${item.correo}</td>
+                <td>${item.departamento}</td>
+                <td>${item.provincia}</td>
+                <td>${item.distrito}</td>
+                <td>${item.cod_postal}</td>
+                <td>${item.direccion}</td>
+                <td>${item.rol}</td>
+                <td> 
+                    <button class="btn btn-outline-success" onclick="editarPersona(${item.id})">Editar</button>
+                    <button class="btn btn-outline-danger" onclick="eliminarPersona(${item.id})">Eliminar</button>
+                </td>
+                `;
+               document.querySelector('#tbl_persona').appendChild(nueva_fila);
+            });
+        }
+        console.log(json);
+    } catch (error) {
+        console.log("Oops salio un error"+error);
+    }
+}
+ if (document.querySelector('#tbl_persona')) {
+    listar_personas();
+ }
+
 async function registrarPersona() {
     // Capturamos los valores de los campos del formulario de persona
     let nro_identidad = document.getElementById('nro_identidad').value;
