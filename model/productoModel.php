@@ -9,9 +9,9 @@ class ProductoModel{
         $this->conexion = $this->conexion->connect();
     }
 
-    public function registrarProducto($codigo, $nombre, $detalle, $precio, $stock, $categoria, $fecha_ven, $imagen, $proveedor){
+    public function registrarProducto($codigo, $nombre, $detalle, $precio, $stock, $categoria, $fecha_ven, $imagen, $proveedor, $tipoArchivo){
         $sql = $this->conexion->query("CALL insertProducto('{$codigo}','{$nombre}','{$detalle}','{$precio}','{$stock}',
-        '{$categoria}','{$fecha_ven}','{$imagen}','{$proveedor}')");
+        '{$categoria}','{$fecha_ven}','{$imagen}','{$proveedor}','{$tipoArchivo}')");
         $sql = $sql->fetch_object();
         return$sql;
 
@@ -34,12 +34,14 @@ class ProductoModel{
         return $arrRespuesta;
     }
 
-    public function obtener_producto($id){
+      // creamos para obtener productos
+      public function obtener_productoid($id){
         $respuesta= $this->conexion->query("SELECT * FROM producto WHERE id='{$id}'");
         $objeto = $respuesta->fetch_object();
         return $objeto;
     }
 
+  
 }
 
 ?>

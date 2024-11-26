@@ -68,6 +68,8 @@ public function obtener_personas(){
     }
     return $arrRespuesta;
 }
+
+
 }
 
 ?>

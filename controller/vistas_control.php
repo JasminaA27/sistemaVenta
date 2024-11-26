@@ -16,6 +16,7 @@ class vistasControlador extends vistaModelo{
         }
         return $respuesta;
     }
+    //obtener vistaadmin tambien va aqui
 }
 
 ?>

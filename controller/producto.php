@@ -36,22 +36,22 @@ if($tipo=="registrar"){
             'mensaje'=>'Error, campos
             vacios');
         }else{
-            $arrProducto = $objProducto->registrarProducto($codigo, $nombre, $detalle, $precio, $stock, $categoria, $fecha_ven, $imagen, $proveedor);
-
-            if($arrProducto->id > 0){
-                $arr_Respuesta = array
-                ('status'=>true,
-                'mensaje'=>'Registro exitoso');
-
-                // CARAGAR ARCHIVOS
+            // CARAGAR ARCHIVOS
                 $archivo = $_FILES['imagen']['tmp_name'];
                 $destino = './assets/img_productos/';
                 $tipoArchivo = strtolower(pathinfo($_FILES["imagen"]["name"], PATHINFO_EXTENSION));
 
-                $nombre = $arrProducto->id.".".$tipoArchivo;
+            $arrProducto = $objProducto->registrarProducto($codigo, $nombre, $detalle, $precio, $stock, $categoria, $fecha_ven, $imagen, $proveedor,$tipoArchivo);
 
-                if (move_uploaded_file($archivo,$destino.$nombre)) {
-                    $arr_imagen = $objProducto->actualizar_imagen($id, $nombre);
+            if($arrProducto->id_n > 0){
+                $arr_Respuesta = array
+                ('status'=>true,
+                'mensaje'=>'Registro exitoso');
+
+                
+                $nombre = $arrProducto->id_n.".".$tipoArchivo;
+
+                if (move_uploaded_file($archivo,$destino.''.$nombre)) {
 
                 }else{
                     $arr_Respuesta = array('status' => true,

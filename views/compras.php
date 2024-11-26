@@ -4,11 +4,11 @@
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Id_producto</th>
+                    <th scope="col">producto</th>
                     <th scope="col">cantidad</th>
                     <th scope="col">Precio</th>
                     <th scope="col">Fecha_compra</th>
-                    <th scope="col">Id_trabajador</th>
+                    <th scope="col">trabajador</th>
                 </tr>
             </thead>
             <tbody id="tbl_compras">
