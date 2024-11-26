@@ -12,7 +12,7 @@ async function listar_personas() {
                 nueva_fila.innerHTML= `
                 <th>${cont}</th>
                 <td>${item.nro_identidad}</td>
-                <td>${item.nombre}</td>
+                <td>${item.razon_social}</td>
                 <td>${item.telefono}</td>
                 <td>${item.correo}</td>
                 <td>${item.departamento}</td>

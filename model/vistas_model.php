@@ -7,7 +7,7 @@ class vistaModelo{
         $palabras_permitidas = ['usuario', 'esika', 'lbel', 'cyzone', 'descripcion', 'producto1', 
         'producto11','producto2', 'producto21', 'producto22', 'producto3', 'producto31',
          'producto4', 'producto41', 'producto5', 'producto51', 'producto52', 'producto32','nuevoProducto','nuevoPersona',
-        'nuevoCategoria', 'nuevoCompras','productos', 'personas'];
+        'nuevoCategoria', 'nuevoCompras','productos', 'personas','categorias','compras'];
        
        /* if (!isset($_SESSION['sesion_ventas_id'])) {
             return "login";

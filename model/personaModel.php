@@ -50,6 +50,12 @@ public function obtener_proveedor($id){
     $objeto = $respuesta->fetch_object();
     return $objeto;
 }
+// funcion para trabajdor en la tabla
+public function obtener_trabajador($id){
+    $respuesta= $this->conexion->query("SELECT * FROM persona WHERE id='{$id}'");
+    $objeto = $respuesta->fetch_object();
+    return $objeto;
+}
 
 
 

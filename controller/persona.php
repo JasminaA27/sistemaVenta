@@ -116,8 +116,7 @@ if ($tipo=="listar"){
     if (!empty($arr_personas)) {
         // recordemos el array para agregar las opciones de las categorias
         for ($i=0; $i < count($arr_personas); $i++) { 
-
-    
+            
             $id_persona = $arr_personas[$i]->id;
             $nombre = $arr_personas[$i]->razon_social;
             $opciones = '';

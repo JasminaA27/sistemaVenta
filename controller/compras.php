@@ -9,11 +9,11 @@ $objcompras = new comprasModel();
 if ($tipo == "registrar") {
     if ($_POST) {
         // Capturamos los datos enviados desde el formulario de compra
-        $id_producto = $_POST['id_producto'];
+        $id_producto = $_POST['producto'];
         $cantidad = $_POST['cantidad'];
         $precio = $_POST['precio'];
         $fecha_compra = $_POST['fecha_compra'];
-        $id_trabajador = $_POST['id_trabajador'];
+        $id_trabajador = $_POST['trabajador'];
 
         // Validación de campos vacíos
         if ($id_producto == "" || $cantidad == "" || $precio == "" || 
@@ -42,9 +42,12 @@ if ($tipo == "registrar") {
                     'status' => false,
                     'mensaje' => 'Error al registrar compra');
                 }
+            }
         
         echo json_encode($arr_Respuesta);
-    }
+    
   }
  }
+ 
 
+ 
