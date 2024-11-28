@@ -16,9 +16,9 @@ async function listar_productos() {
                 <td>${item.stock}</td>
                 <td>${item.categoria.nombre}</td>
                 <td>${item.proveedor.razon_social}</td>
-                <td> <button class="btn btn-outline-success" onclick="editarProducto(2)">Editar</button>
-                     <button class="btn btn-outline-danger" onclick="eliminarProducto(2)">Eliminar</button>
-                    </td>
+
+                <td>${item.options}</td>
+               
                 `;
                document.querySelector('#tbl_producto').appendChild(nueva_fila);
             });
@@ -124,3 +124,36 @@ async function listar_proveedores() {
     }
 }
 
+// para editar
+async function ver_producto(id) {
+    const formData=new FormData();
+    formData.append('id_producto', id);
+    try {
+        let respuesta= await fetch(base_url + 'controller/producto.php?tipo=ver',{
+            method:'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: formData
+        });
+        // envia solicitud al controlador productos
+        json = await respuesta.json();
+        if (json.status) {
+            document.querySelector('#codigo').value = json.contenido.codigo;
+            document.querySelector('#nombre').value = json.contenido.nombre;
+            document.querySelector('#detalle').value = json.contenido.detalle;
+            document.querySelector('#precio').value = json.contenido.precio;
+            document.querySelector('#categoria').value = json.contenido.categoria;
+            document.querySelector('#fecha_ven').value = json.contenido.fecha_ven;
+            document.querySelector('#proveedor').value = json.contenido.proveedor;
+      
+        }else{
+            window.location = base_url+"productos";
+        }
+
+        console.log(json);
+    } catch (error) {
+        console.log("Oops ocurrio un error"+error)
+        
+    }
+    
+}

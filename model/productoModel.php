@@ -39,6 +39,12 @@ class ProductoModel{
         return $objeto;
     }
 
+// para edditar
+    public function verProducto($id){
+        $sql= $this->conexion->query("SELECT * FROM producto WHERE id='$id'");
+        $sql = $sql->fetch_object();
+        return $sql;
+    }
   
 }
 

@@ -52,8 +52,7 @@ if($tipo=="registrar"){
                 
                 $nombre = $arrProducto->id_n.".".$tipoArchivo;
 
-                if (
-                    ($archivo,$destino.''.$nombre)) {
+                if (move_uploaded_file($archivo,$destino.''.$nombre)) {
 
                 }else{
                     $arr_Respuesta = array('status' => true,
@@ -96,7 +95,9 @@ if ($tipo=="listar"){
 
             $id_producto = $arr_Producto[$i]->id;
             $nombre = $arr_Producto[$i]->nombre;
-            $opciones = '';
+            // localhost//editar-producto/id del productto 4     // opcion eliminar llama a la funcion eliminar producto/id del producto
+            $opciones = '<a href="'.BASE_URL.'editarProducto/'.$id_producto.'">Editar</a>
+            <button onclick="editarProducto('.$id_producto.');" >Eliminar</button>';
             $arr_Producto[$i] ->options = $opciones;
         }
         $arr_Respuesta['status']= true;
@@ -105,4 +106,19 @@ if ($tipo=="listar"){
     echo json_encode($arr_Respuesta);
 
 }
+
+if($tipo == "ver"){
+    //print_r($_POST);
+    $id_producto = $_POST['id_producto'];
+    $arr_Respuesta = $objProducto->verProducto($id_producto);
+    //print_r($arr_Respuesta);
+    if (empty($arr_Respuesta)) {
+        $response = array('status'=> false,'mensaje'=>"Error, no hay informacion");
+    }else {
+        $response = array('status'=> true,'mensaje'=>"Datos encontrados",'contenido'=>$arr_Respuesta);
+    }
+    echo json_encode($response);
+
+}
+
 ?>
