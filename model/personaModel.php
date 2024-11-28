@@ -25,7 +25,11 @@ class personaModel{
     // Llamada al procedimiento almacenado que inserta una categoría
     $sql = $this->conexion->query("CALL insertPersona('{$nro_identidad}', '{$razon_social}', '{$telefono}', 
     '{$correo}', '{$departamento}', '{$provincia}', '{$distrito}', '{$cod_postal}', '{$direccion}', '{$rol}', '{$password}')");
-    
+    if ($sql== false) {
+        print_r(value: $this->conexion->error);
+        }
+
+        
     // Se obtiene el objeto de resultado
     $sql = $sql->fetch_object();
     return $sql;

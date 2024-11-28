@@ -39,7 +39,7 @@ if ($tipo == "registrar") {
             $arrPersona = $objPersona->registrarPersona(
                 $nro_identidad, $razon_social, $telefono, $correo, 
                 $departamento, $provincia, $distrito, $cod_postal, 
-                $direccion, $rol, $secure_password,
+                $direccion, $rol, $secure_password
             );
 
 
