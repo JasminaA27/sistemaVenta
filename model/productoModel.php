@@ -21,8 +21,6 @@ class ProductoModel{
         return 1;
     }
 
-
-
     
     //funcion para crear productos en la tabla producto
     public function obtener_productos(){
