@@ -139,12 +139,14 @@ async function ver_producto(id) {
         json = await respuesta.json();
         if (json.status) {
             document.querySelector('#codigo').value = json.contenido.codigo;
+            document.querySelector('#id_producto').value = json.contenido.id;
+            document.querySelector('#img').value = json.contenido.imagen;
             document.querySelector('#nombre').value = json.contenido.nombre;
             document.querySelector('#detalle').value = json.contenido.detalle;
             document.querySelector('#precio').value = json.contenido.precio;
-            document.querySelector('#categoria').value = json.contenido.categoria;
-            document.querySelector('#fecha_ven').value = json.contenido.fecha_ven;
-            document.querySelector('#proveedor').value = json.contenido.proveedor;
+            document.querySelector('#categoria').value = json.contenido.id_categoria;
+            document.querySelector('#fecha_ven').value = json.contenido.fecha_vencimiento;
+            document.querySelector('#proveedor').value = json.contenido.id_proveedor;
       
         }else{
             window.location = base_url+"productos";
@@ -156,4 +158,42 @@ async function ver_producto(id) {
         
     }
     
+}
+async function actualizarProducto() {
+    let codigo = document.getElementById('codigo').value;
+    let nombre = document.querySelector('#nombre').value;
+    let detalle = document.querySelector('#detalle').value;
+    let precio= document.querySelector('#precio').value;
+
+    let categoria = document.querySelector('#categoria').value;
+    let fecha_ven = document.querySelector('#fecha_ven').value;
+
+    //let imagen = document.querySelector('#imagen').value;
+    let proveedor = document.querySelector('#proveedor').value;
+    if (codigo==""|| nombre==""|| detalle==""|| precio==""|| 
+        categoria==""|| fecha_ven==""|| proveedor=="" ){ 
+        alert("error!!, campos vacios");
+        return;
+    }
+   try{
+    // capturamos datpos del formulario html
+    const datos = new FormData(frmActualizar);
+    // enviar datod hacia el controlador esto es por el metodod pst
+    let respuesta = await fetch(base_url+'controller/producto.php?tipo=actualizar',{
+        method: 'POST',
+        mode: 'cors',
+        cache: 'no-cache',
+        body: datos
+    });
+    json = await respuesta.json();
+    if(json.status){
+        swal("registro", json.mensaje, "success");
+    }else{
+        swal("registro", json.mensaje, "error");
+    }
+
+    console.log(json);
+   } catch (e){
+    console.log("Oops, ocurrio un error"+e);
+   }
 }

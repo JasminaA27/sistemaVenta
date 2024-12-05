@@ -16,15 +16,15 @@
         <div class="container-fluid row d-block">
             <div class="col-12 row">
                 <a class="navbar-brand col-1" href="<?php echo BASE_URL; ?>esika"style=" width: 70px;"  >
-                    <img src="./views/plantilla/img/esika.png" alt="Bootstrap"
+                    <img src="<?php echo BASE_URL; ?>./views/plantilla/img/esika.png" alt="Bootstrap"
                         width="80" height="40">
                     </a>
                     <a class="navbar-brand col-1" href="<?php echo BASE_URL; ?>lbel"style=" width: 70px; margin-left: -10px; ">
-                        <img src="./views/plantilla/img/lbel.png" alt="Bootstrap"
+                        <img src="<?php echo BASE_URL; ?>./views/plantilla/img/lbel.png" alt="Bootstrap"
                             width="80" height="40">
                         </a>
                         <a class="navbar-brand col-1" href="<?php echo BASE_URL; ?>cyzone" style=" width: 70px; margin-left: -10px;">
-                            <img src="./views/plantilla/img/cyzone.png" alt="Bootstrap"
+                            <img src="<?php echo BASE_URL; ?>./views/plantilla/img/cyzone.png" alt="Bootstrap"
                                 width="80" height="40">
                             </a>  
                 <form class="d-flex col-5" role="search" style="margin-left:100px;">
@@ -33,17 +33,17 @@
                 <div class="row justify-content-end">
                   <div class="col-auto" style="margin-top: -42px; justify-content: center;">
                     <a href="<?php echo BASE_URL; ?>descripcion">
-                        <img src="./views/plantilla/img/megus.png" class="profile-pic" width="50" height="30">
+                        <img src="<?php echo BASE_URL; ?>./views/plantilla/img/megus.png" class="profile-pic" width="50" height="30">
                     </a>
                   </div>
                   <div class="col-auto  "style="margin-top: -50px;">
                     <a href="<?php echo BASE_URL; ?>carrito">
-                      <img src="./views/plantilla/img/carrito.png" class="profile-pic"width="45" height="45" >
+                      <img src="<?php echo BASE_URL; ?>./views/plantilla/img/carrito.png" class="profile-pic"width="45" height="45" >
                     </a>                         
                   </div>
                   <div class="col-auto"style="margin-top: -45px;">
                     <a href="<?php echo BASE_URL; ?>perfil">
-                      <img src="./views/plantilla/img/usu.png" class="profile-pic" width="35" height="35">
+                      <img src="<?php echo BASE_URL; ?>./views/plantilla/img/usu.png" class="profile-pic" width="35" height="35">
                     
                     </a>
                   </div>

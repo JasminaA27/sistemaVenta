@@ -1,9 +1,15 @@
 <div class="container">
     FORMMULARIO DE EDITAR PRODUCTO
-    <form action="" class="p-4 border rounded shadow" id="frmRegistrar">
+    <form action="" class="p-4 border rounded shadow" id="frmActualizar">
+
+      <!--impust ocultos-->
+      <input type="hidden" id="id_producto" name="id_producto">
+      <input type="hidden" id="img" name="img">
+
+      
         <div class="form-group">
             <label for="codigo">Código:</label>
-            <input type="text" class="form-control" id="codigo" name= "codigo" required>
+            <input type="text" class="form-control" id="codigo" name= "codigo" readonly>
         </div>
         <div class="form-group">
             <label for="nombre">Nombre:</label>
@@ -28,6 +34,10 @@
             <label for="fecha_ven">Fecha de Vencimiento:</label>
             <input type="date" class="form-control" id="fecha_ven" name= "fecha_ven" required>
         </div>
+        <div class="form-group">
+            <label for="imagen">Imagen:</label>
+            <input type="file" class="form-control" id="imagen" name= "imagen" placeholder="url" required>
+        </div>
 
         <div class="form-group">
             <label for="proveedor">Proveedor:</label>
@@ -35,7 +45,7 @@
                 <option>Seleccione un proveedor</option>
             </select>
         </div>
-        <button type="button" class="btn btn-success" onclick="registrarProducto();">Registrar</button>
+        <button type="button" class="btn btn-success" onclick="actualizarProducto();">Actualizar</button>
     </form>
 </div>
 

@@ -121,4 +121,66 @@ if($tipo == "ver"){
 
 }
 
+// para actualizar
+
+if($tipo=="actualizar"){
+    //print_r($_POST);
+    //echo $_FILES['imagen'] ['name'];
+
+   if ($_POST){
+
+        $id_producto = $_POST['id_producto'];
+        $img = $_POST['img'];
+        $nombre = $_POST['nombre'];
+        $detalle= $_POST['detalle'];
+        $precio= $_POST['precio'];
+        $categoria = $_POST['categoria'];
+        $fecha_ven = $_POST['fecha_ven'];
+        //$imagen = 'imagen';
+        $proveedor = $_POST['proveedor'];
+
+        if( $nombre=="" || 
+        $detalle=="" || $precio==""|| $categoria=="" ||
+          $fecha_ven=="" || 
+           $proveedor==""){
+            //respuesta
+            $arr_Respuesta = array
+            ('status'=>false,
+            'mensaje'=>'Error, campos
+            vacios');
+        }else{
+              
+             $arrProducto = $objProducto->actualizarProducto($id_producto,$nombre, $detalle, $precio, $categoria, $fecha_ven, $proveedor);
+
+            if($arrProducto->p_id > 0){
+                $arr_Respuesta = array
+                ('status'=>true,
+                'mensaje'=>' Producto Actualizado ');
+
+                //funcion para actualizar imagen por id
+                if ($_FILES['imagen']['tmp_name'] !="") {
+                    unlink('../assets/img_productos/'.$img);
+
+                   // CARAGAR ARCHIVOS
+                $archivo = $_FILES['imagen']['tmp_name'];
+                $destino = '../assets/img_productos/';
+                $tipoArchivo = strtolower(pathinfo($_FILES["imagen"]["name"], PATHINFO_EXTENSION));
+
+                if (move_uploaded_file($archivo,$destino.''.
+                $id_producto.'.'.$tipoArchivo)) {   
+                }
+
+             }
+
+            }else{
+                $arr_Respuesta = array('status'=>false,
+                'mensaje'=> 'Error al actualizar producto');
+            }
+            echo json_encode($arr_Respuesta);
+
+
+        }
+    }
+}
+
 ?>
