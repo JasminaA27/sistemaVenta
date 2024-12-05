@@ -35,4 +35,10 @@ class categoriaModel{
         $objeto = $respuesta->fetch_object();
         return $objeto;
     }
+    // para edditar
+    public function verCatergoria($id){
+        $sql= $this->conexion->query("SELECT * FROM categoria WHERE id='$id'");
+        $sql = $sql->fetch_object();
+        return $sql;
+    }
 }

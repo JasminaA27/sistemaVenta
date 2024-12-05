@@ -73,7 +73,12 @@ public function obtener_personas(){
     return $arrRespuesta;
 }
 
-
+// para edditar
+public function verPersona($id){
+    $sql= $this->conexion->query("SELECT * FROM persona WHERE id='$id'");
+    $sql = $sql->fetch_object();
+    return $sql;
+}
 }
 
 ?>

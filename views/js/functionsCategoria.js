@@ -14,10 +14,7 @@ async function listar_categorias() {
                 <td>${item.nombre}</td>
                 <td>${item.detalle}</td>
                 
-                <td> 
-                    <button class="btn btn-outline-success" onclick="editarPersona(${item.id})">Editar</button>
-                    <button class="btn btn-outline-danger" onclick="eliminarPersona(${item.id})">Eliminar</button>
-                </td>
+                <td>${item.options}</td>
                 `;
                document.querySelector('#tbl_categoria').appendChild(nueva_fila);
             });
@@ -70,3 +67,32 @@ async function registrarCategoria() {
         console.log("Oops, ocurrió un error: " + e);
     }
 }
+// para editar
+async function ver_categoria(id) {
+    const formData=new FormData();
+    formData.append('id_categoria', id);
+    try {
+        let respuesta= await fetch(base_url + 'controller/categoria.php?tipo=ver',{
+            method:'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: formData
+        });
+        // envia solicitud al controlador categorias
+        json = await respuesta.json();
+        if (json.status) {
+            document.querySelector('#nombre').value = json.contenido.nombre;
+            document.querySelector('#detalle').value = json.contenido.detalle;
+      
+        }else{
+            window.location = base_url+"categorias";
+        }
+
+        console.log(json);
+    } catch (error) {
+        console.log("Oops ocurrio un error"+error)
+        
+    }
+    
+}
+

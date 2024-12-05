@@ -54,13 +54,28 @@ if ($tipo=="listar"){
         for ($i=0; $i < count($arr_categorias); $i++) { 
             $id_categoria = $arr_categorias[$i]->id;
             $categoria = $arr_categorias[$i]->nombre;
-            $opciones = '';
+            $opciones = '<a href="'.BASE_URL.'editarCategoria/'.$id_categoria.'">Editar</a>
+            <button onclick="editarCategoria('.$id_categoria.');" >Eliminar</button>';
             $arr_categorias[$i] ->options = $opciones;
         }
         $arr_Respuesta['status']= true;
         $arr_Respuesta['contenido']= $arr_categorias;
     }
     echo json_encode($arr_Respuesta);
+
+}
+
+if($tipo == "ver"){
+    //print_r($_POST);
+    $id_categoria = $_POST['id_categoria'];
+    $arr_Respuesta = $objcategoria->verCatergoria($id_categoria);
+    //print_r($arr_Respuesta);
+    if (empty($arr_Respuesta)) {
+        $response = array('status'=> false,'mensaje'=>"Error, no hay informacion");
+    }else {
+        $response = array('status'=> true,'mensaje'=>"Datos encontrados",'contenido'=>$arr_Respuesta);
+    }
+    echo json_encode($response);
 
 }
 

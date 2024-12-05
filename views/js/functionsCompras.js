@@ -17,10 +17,8 @@ async function listar_compras() {
                 <td>${item.precio}</td>
                 <td>${item.fecha_compra}</td>
                 <td>${item.trabajador.razon_social}</td>
-                <td> 
-                    <button class="btn btn-outline-success" onclick="editarPersona(${item.id})">Editar</button>
-                    <button class="btn btn-outline-danger" onclick="eliminarPersona(${item.id})">Eliminar</button>
-                </td>
+                
+                <td>${item.options}</td>
                 `;
                document.querySelector('#tbl_compras').appendChild(nueva_fila);
             });
@@ -58,6 +56,7 @@ async function registrarCompras() {
 
     try {
         // Capturamos los datos del formulario HTML
+        
         const datos = new FormData(frmRegistrar);
 
         // Enviar los datos hacia el controlador mediante el método POST
@@ -125,4 +124,35 @@ async function listar_trabajadores() {
     }catch(e){
         console.log("Error al cargar trbajador"+e);
     }
+}
+async function ver_compras(id) {
+    const formData=new FormData();
+    formData.append('id_compra', id);
+    try {
+        let respuesta= await fetch(base_url + 'controller/compras.php?tipo=ver',{
+            method:'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: formData
+        });
+        // envia solicitud al controlador compras
+        json = await respuesta.json();
+        if (json.status) {
+            document.querySelector('#producto').value = json.contenido.producto;
+            document.querySelector('#cantidad').value = json.contenido.cantidad;
+            document.querySelector('#precio').value = json.contenido.precio;
+            document.querySelector('#fecha_compra').value = json.contenido.fecha_compra;
+            document.querySelector('#trabajador').value = json.contenido.trabajador;
+           
+      
+        }else{
+            window.location = base_url+"compras";
+        }
+
+        console.log(json);
+    } catch (error) {
+        console.log("Oops ocurrio un error"+error)
+        
+    }
+    
 }

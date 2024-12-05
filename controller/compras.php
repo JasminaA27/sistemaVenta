@@ -76,13 +76,28 @@ if ($tipo=="listar"){
 
             $id_compras = $arr_compras[$i]->id;
             $cantidad = $arr_compras[$i]->cantidad;
-            $opciones = '';
+            $opciones = '<a href="'.BASE_URL.'editarCompras/'.$id_compras.'">Editar</a>
+            <button onclick="editarCompras('.$id_compras.');" >Eliminar</button>';
             $arr_compras[$i] ->options = $opciones;
         }
         $arr_Respuesta['status']= true;
         $arr_Respuesta['contenido']= $arr_compras;
     }
     echo json_encode($arr_Respuesta);
+
+}
+
+if($tipo == "ver"){
+    //print_r($_POST);
+    $id_compras = $_POST['id_compra'];
+    $arr_Respuesta = $objcompras->verCompras($id_compras);
+    //print_r($arr_Respuesta);
+    if (empty($arr_Respuesta)) {
+        $response = array('status'=> false,'mensaje'=>"Error, no hay informacion");
+    }else {
+        $response = array('status'=> true,'mensaje'=>"Datos encontrados",'contenido'=>$arr_Respuesta);
+    }
+    echo json_encode($response);
 
 }
  

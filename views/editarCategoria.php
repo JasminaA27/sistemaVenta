@@ -1,5 +1,5 @@
 <div class="container">
-    FORMULARIO DE REGISTRO DE CATEGORIA
+    FORMULARIO DE EDITAR CATEGORIA
     <form action="" class="p-4 border rounded shadow" id="frmRegistrarCategoria">
         <div class="form-group">
             <label for="nombre">Nombre:</label>
@@ -13,3 +13,8 @@
     </form>
 </div>
 <script src="<?php echo BASE_URL;?>views/js/functionsCategoria.js"></script>
+<script>
+    //http://localhost/sistemaVenta/categorias
+    const id_p=<?php $pagina=explode("/", $_GET['views']); echo $pagina['1'];  ?>;
+    ver_categoria(id_p);
+</script>

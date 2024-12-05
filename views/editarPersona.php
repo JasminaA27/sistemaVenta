@@ -1,5 +1,5 @@
 <div class="container">
-    FORMULARIO DE REGISTRO DE PERSONA
+    FORMULARIO DE EDITAR PERSONA
     <form action="" class="p-4 border rounded shadow" id="frmRegistrar">
         <div class="form-group">
             <label for="nro_identidad">Número de Identidad:</label>
@@ -57,3 +57,8 @@
     </form>
 </div>
 <script src="<?php echo BASE_URL;?>views/js/functionsPersona.js"></script>
+<script>
+    //http://localhost/sistemaVenta/personas
+    const id_p=<?php $pagina=explode("/", $_GET['views']); echo $pagina['1'];  ?>;
+    ver_persona(id_p);
+</script>

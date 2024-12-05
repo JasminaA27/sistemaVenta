@@ -1,5 +1,5 @@
 <div class="container">
-    FORMULARIO DE RESGISTRO DE COMPRAS
+    FORMULARIO DE EDITAR COMPRAS
     <form action="" class="p-4 border rounded shadow" id="frmRegistrar">
         <div class="form-group">
             <label for="producto">ID Producto:</label>
@@ -32,3 +32,8 @@
 <script src="<?php echo BASE_URL;?>views/js/functionsCompras.js"></script>
 <script>listar_productos();</script>
 <script>listar_trabajadores();</script>
+<script>
+    //http://localhost/sistemaVenta/compras
+    const id_p=<?php $pagina=explode("/", $_GET['views']); echo $pagina['1'];  ?>;
+    ver_compras(id_p);
+</script>

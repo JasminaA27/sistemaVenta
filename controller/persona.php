@@ -119,13 +119,27 @@ if ($tipo=="listar"){
             
             $id_persona = $arr_personas[$i]->id;
             $nombre = $arr_personas[$i]->razon_social;
-            $opciones = '';
+            $opciones = '<a href="'.BASE_URL.'editarPersona/'.$id_persona.'">Editar</a>
+            <button onclick="editarPersona('.$id_persona.');" >Eliminar</button>';
             $arr_personas[$i] ->options = $opciones;
         }
         $arr_Respuesta['status']= true;
         $arr_Respuesta['contenido']= $arr_personas;
     }
     echo json_encode($arr_Respuesta);
+
+}
+if($tipo == "ver"){
+    //print_r($_POST);
+    $id_persona = $_POST['id_persona'];
+    $arr_Respuesta = $objPersona->verPersona($id_persona);
+    //print_r($arr_Respuesta);
+    if (empty($arr_Respuesta)) {
+        $response = array('status'=> false,'mensaje'=>"Error, no hay informacion");
+    }else {
+        $response = array('status'=> true,'mensaje'=>"Datos encontrados",'contenido'=>$arr_Respuesta);
+    }
+    echo json_encode($response);
 
 }
 

@@ -1,4 +1,5 @@
 <div class="container">
+    FORMULARIO DE REGISTRO DE PRODUCTO
     <form action="" class="p-4 border rounded shadow" id="frmRegistrar">
         <div class="form-group">
             <label for="codigo">Código:</label>
