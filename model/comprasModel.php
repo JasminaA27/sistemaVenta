@@ -32,6 +32,12 @@ class comprasModel {
     $sql = $sql->fetch_object();
     return $sql;
 }
+public function actualizarCompras($id, $id_producto, $cantidad, $precio, $fecha_compra, $id_trabajador) {
+    $sql = $this->conexion->query("CALL actualizarCompras('{$id}','{$id_producto}', '{$cantidad}', '{$precio}', '{$fecha_compra}', '{$id_trabajador}')");
+    $sql = $sql->fetch_object();
+    return $sql;
+}
+
 }
 
 

@@ -17,7 +17,7 @@
         </div>
         <div class="form-group">
             <label for="fecha_compra">Fecha de Compra:</label>
-            <input type="date" class="form-control" id="fecha_compra" name="fecha_compra" required>
+            <input type="datetime" class="form-control" id="fecha_compra" name="fecha_compra" required>
         </div>
         <div class="form-group">
             <label for="trabajador">ID Trabajador:</label>

@@ -143,4 +143,64 @@ if($tipo == "ver"){
 
 }
 
+
+// para actualizar
+
+if($tipo=="actualizar"){
+
+    if ($_POST) {
+        // Capturamos los datos enviados desde el formulario
+        $id_producto = $_POST['id_producto'];
+        $nro_identidad = $_POST['nro_identidad'];
+        $razon_social = $_POST['razon_social'];
+        $telefono = $_POST['telefono'];
+        $correo = $_POST['correo'];
+        $departamento = $_POST['departamento'];
+        $provincia = $_POST['provincia'];
+        $distrito = $_POST['distrito'];
+        $cod_postal = $_POST['cod_postal'];
+        $direccion = $_POST['direccion'];
+        $rol = $_POST['rol'];
+      
+        // cifrar contraseña
+        $secure_password = password_hash($nro_identidad, PASSWORD_DEFAULT);
+
+        // Validación de campos vacíos
+        if ($nro_identidad == "" || $razon_social == "" || $telefono == "" || 
+            $correo == "" || $departamento == "" || $provincia == "" || 
+            $distrito == "" || $cod_postal == "" || $direccion == "" || 
+            $rol == "" || $secure_password == ""
+        ) {
+            // Respuesta si hay campos vacíos
+            $arr_Respuesta = array(
+                'status' => false,
+                'mensaje' => 'Error, campos vacíos'
+            );
+        } else {
+            // Llamada al método del modelo para registrar a la persona
+                $arrPersona = $objPersona->actualizarPersona(
+                $id_producto,$nro_identidad, $razon_social, $telefono, $correo, 
+                $departamento, $provincia, $distrito, $cod_postal, 
+                $direccion, $rol, $secure_password
+            );
+
+
+            // Comprobamos si el registro fue exitoso
+            if ($arrPersona->p_id > 0) {
+                $arr_Respuesta = array(
+                    'status' => true,
+                    'mensaje' => 'Persona Actualizado'
+                );
+            } else {
+                $arr_Respuesta = array(
+                    'status' => false,
+                    'mensaje' => 'Error al actualizar persona'
+                );
+            }
+        
+        echo json_encode($arr_Respuesta);
+        }
+    }
+}
+
 ?>

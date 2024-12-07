@@ -24,7 +24,7 @@ if ($tipo == "registrar") {
             $arrCategoria = $objCategoria->registrarCategoria($nombre, $detalle);
 
             // Comprobamos si el registro fue exitoso
-            if ($arrCategoria->id > 0) {
+            if ($arrCategoria->p_id > 0) {
                 $arr_Respuesta = array(
                     'status' => true,
                     'mensaje' => 'Categoría registrada exitosamente'
@@ -77,6 +77,41 @@ if($tipo == "ver"){
     }
     echo json_encode($response);
 
+}
+if($tipo=="actualizar"){
+
+    if ($_POST) {
+        $id_producto = $_POST['id_producto'];
+        $nombre = $_POST['nombre'];
+        $detalle = $_POST['detalle'];
+
+        // Validación de campos vacíos
+        if ($nombre == "" || $detalle == "") {
+            // Respuesta si hay campos vacíos
+            $arr_Respuesta = array(
+                'status' => false,
+                'mensaje' => 'Error, campos vacíos'
+            );
+        } else {
+            // Llamada al método del modelo para registrar la categoría
+            $arrCategoria = $objCategoria->actualizarCategoria($id_producto, $nombre, $detalle);
+
+            // Comprobamos si el registro fue exitoso
+            if ($arrCategoria->p_id > 0) {
+                $arr_Respuesta = array(
+                    'status' => true,
+                    'mensaje' => 'Categoría Actualizada'
+                );
+            } else {
+                $arr_Respuesta = array(
+                    'status' => false,
+                    'mensaje' => 'Error al actualizar categoría'
+                );
+            }
+        
+        echo json_encode($arr_Respuesta);
+        }
+    }
 }
 
 ?>

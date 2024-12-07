@@ -98,6 +98,7 @@ async function ver_persona(id) {
         // envia solicitud al controlador personas
         json = await respuesta.json();
         if (json.status) {
+            document.querySelector('#id_producto').value = json.contenido.id;
             document.querySelector('#nro_identidad').value = json.contenido.nro_identidad;
             document.querySelector('#razon_social').value = json.contenido.razon_social;
             document.querySelector('#telefono').value = json.contenido.telefono;
@@ -108,6 +109,7 @@ async function ver_persona(id) {
             document.querySelector('#cod_postal').value = json.contenido.cod_postal;
             document.querySelector('#direccion').value = json.contenido.direccion;
             document.querySelector('#rol').value = json.contenido.rol;
+            document.querySelector('#password').value = json.contenido.password;
       
         }else{
             window.location = base_url+"personas";
@@ -119,4 +121,25 @@ async function ver_persona(id) {
         
     }
     
+}
+async function actualizarPersona() {
+    const datos = new FormData(frmActualizar);
+   try{
+    let respuesta = await fetch(base_url+'controller/persona.php?tipo=actualizar',{
+        method: 'POST',
+        mode: 'cors',
+        cache: 'no-cache',
+        body: datos
+    });
+    json = await respuesta.json();
+    if(json.status){
+        swal("Actualizado", json.mensaje, "success");
+    }else{
+        swal("Actualizado", json.mensaje, "error");
+    }
+
+    console.log(json);
+   } catch (e){
+    console.log("Oops, ocurrio un error"+e);
+   }
 }

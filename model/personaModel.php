@@ -79,6 +79,14 @@ public function verPersona($id){
     $sql = $sql->fetch_object();
     return $sql;
 }
+public function actualizarPersona($id, $nro_identidad, $razon_social, $telefono, $correo, $departamento,
+$provincia, $distrito, $cod_postal, $direccion, $rol, $password){
+    $sql = $this->conexion->query("CALL actualizarPersona('{$id}','{$nro_identidad}', '{$razon_social}', '{$telefono}', 
+    '{$correo}', '{$departamento}', '{$provincia}', '{$distrito}', '{$cod_postal}', '{$direccion}', '{$rol}', '{$password}')");
+    $sql = $sql->fetch_object();
+    return$sql;
+
+}
 }
 
 ?>

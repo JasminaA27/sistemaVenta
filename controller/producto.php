@@ -159,7 +159,7 @@ if($tipo=="actualizar"){
 
                 //funcion para actualizar imagen por id
                 if ($_FILES['imagen']['tmp_name'] !="") {
-                    unlink('../assets/img_productos/'.$img);
+                    unlink('../assets/img_productos/' . $img);
 
                    // CARAGAR ARCHIVOS
                 $archivo = $_FILES['imagen']['tmp_name'];

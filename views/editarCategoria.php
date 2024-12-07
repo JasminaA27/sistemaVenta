@@ -1,6 +1,9 @@
 <div class="container">
     FORMULARIO DE EDITAR CATEGORIA
-    <form action="" class="p-4 border rounded shadow" id="frmRegistrarCategoria">
+    <form action="" class="p-4 border rounded shadow" id="frmActualizar">
+        <!--impust ocultos-->
+    <input type="hidden" id="id_producto" name="id_producto">
+    
         <div class="form-group">
             <label for="nombre">Nombre:</label>
             <input type="text" class="form-control" id="nombre" name="nombre" required>
@@ -9,7 +12,7 @@
             <label for="detalle">Detalle:</label>
             <input type="text" class="form-control" id="detalle" name="detalle" required>
         </div>
-        <button type="button" class="btn btn-success" onclick="registrarCategoria();">Registrar</button>
+        <button type="button" class="btn btn-success" onclick="actualizarCategoria();">Actualizar</button>
     </form>
 </div>
 <script src="<?php echo BASE_URL;?>views/js/functionsCategoria.js"></script>

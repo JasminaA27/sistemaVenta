@@ -39,7 +39,7 @@ async function listar_compras() {
 
 async function registrarCompras() {
     // Capturamos los valores de los campos del formulario de compra
-    let producto = document.getElementById('producto').value;
+    let id_producto = document.getElementById('producto').value;
     let cantidad = document.querySelector('#cantidad').value;
     let precio = document.querySelector('#precio').value;
     let fecha_compra = document.querySelector('#fecha_compra').value;
@@ -47,7 +47,7 @@ async function registrarCompras() {
 
     // Validación de campos vacíos
     if (
-        producto === "" || cantidad === "" || precio === "" || 
+        id_producto === "" || cantidad === "" || precio === "" || 
         fecha_compra === "" || id_trabajador === ""
     ) {
         alert("Error: ¡Hay campos vacíos!");
@@ -138,11 +138,13 @@ async function ver_compras(id) {
         // envia solicitud al controlador compras
         json = await respuesta.json();
         if (json.status) {
+            document.querySelector('#id_producto').value = json.contenido.id;
             document.querySelector('#producto').value = json.contenido.id_producto;
             document.querySelector('#cantidad').value = json.contenido.cantidad;
             document.querySelector('#precio').value = json.contenido.precio;
             document.querySelector('#fecha_compra').value = json.contenido.fecha_compra;
             document.querySelector('#trabajador').value = json.contenido.id_trabajador;
+            
            
       
         }else{
@@ -155,4 +157,26 @@ async function ver_compras(id) {
         
     }
     
+}
+ //para actualizar
+async function actualizarCompras() {
+    const datos = new FormData(frmActualizar);
+   try{
+    let respuesta = await fetch(base_url+'controller/compras.php?tipo=actualizar',{
+        method: 'POST',
+        mode: 'cors',
+        cache: 'no-cache',
+        body: datos
+    });
+    json = await respuesta.json();
+    if(json.status){
+        swal("Actualizado", json.mensaje, "success");
+    }else{
+        swal("No actualizado", json.mensaje, "error");
+    }
+
+    console.log(json);
+   } catch (e){
+    console.log("Oops, ocurrio un error"+e);
+   }
 }

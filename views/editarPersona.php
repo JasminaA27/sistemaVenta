@@ -1,6 +1,9 @@
 <div class="container">
     FORMULARIO DE EDITAR PERSONA
-    <form action="" class="p-4 border rounded shadow" id="frmRegistrar">
+    <form action="" class="p-4 border rounded shadow" id="frmActualizar">    
+      <!--impust ocultos-->
+    <input type="hidden" id="id_producto" name="id_producto">
+
         <div class="form-group">
             <label for="nro_identidad">Número de Identidad:</label>
             <input type="text" class="form-control" id="nro_identidad" name="nro_identidad" required>
@@ -41,11 +44,11 @@
             <label for="rol">Rol:</label>
             <input type="text" class="form-control" id="rol" name="rol" required>
         </div>
-        <!-- <div class="form-group">
+        <div class="form-group">
             <label for="password">Contraseña:</label>
             <input type="password" class="form-control" id="password" name="password" required>
         </div>
-        <div class="form-group">
+         <!--<div class="form-group">
             <label for="estado">Estado:</label>
             <input type="text" class="form-control" id="estado"  name="estado"  required>
         </div>
@@ -53,7 +56,7 @@
             <label for="fecha_inicio">Fecha de Registro:</label>
             <input type="date" class="form-control" id="fecha_registro" name="fecha_registro" required>
         </div>  -->
-        <button type="button" class="btn btn-success" onclick="registrarPersona();">Registrar</button>
+        <button type="button" class="btn btn-success" onclick="actualizarPersona();">Actualizar</button>
     </form>
 </div>
 <script src="<?php echo BASE_URL;?>views/js/functionsPersona.js"></script>

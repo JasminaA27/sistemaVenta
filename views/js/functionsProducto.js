@@ -160,25 +160,8 @@ async function ver_producto(id) {
     
 }
 async function actualizarProducto() {
-    let codigo = document.getElementById('codigo').value;
-    let nombre = document.querySelector('#nombre').value;
-    let detalle = document.querySelector('#detalle').value;
-    let precio= document.querySelector('#precio').value;
-
-    let categoria = document.querySelector('#categoria').value;
-    let fecha_ven = document.querySelector('#fecha_ven').value;
-
-    //let imagen = document.querySelector('#imagen').value;
-    let proveedor = document.querySelector('#proveedor').value;
-    if (codigo==""|| nombre==""|| detalle==""|| precio==""|| 
-        categoria==""|| fecha_ven==""|| proveedor=="" ){ 
-        alert("error!!, campos vacios");
-        return;
-    }
-   try{
-    // capturamos datpos del formulario html
     const datos = new FormData(frmActualizar);
-    // enviar datod hacia el controlador esto es por el metodod pst
+   try{
     let respuesta = await fetch(base_url+'controller/producto.php?tipo=actualizar',{
         method: 'POST',
         mode: 'cors',
@@ -187,9 +170,9 @@ async function actualizarProducto() {
     });
     json = await respuesta.json();
     if(json.status){
-        swal("registro", json.mensaje, "success");
+        swal("Actualizado", json.mensaje, "success");
     }else{
-        swal("registro", json.mensaje, "error");
+        swal("Actualizado", json.mensaje, "error");
     }
 
     console.log(json);
