@@ -96,8 +96,8 @@ if ($tipo=="listar"){
             $id_producto = $arr_Producto[$i]->id;
             $nombre = $arr_Producto[$i]->nombre;
             // localhost//editar-producto/id del productto 4     // opcion eliminar llama a la funcion eliminar producto/id del producto
-            $opciones = '<a href="'.BASE_URL.'editarProducto/'.$id_producto.'">Editar</a>
-            <button onclick="editarProducto('.$id_producto.');" >Eliminar</button>';
+            $opciones = '<a href="'.BASE_URL.'editarProducto/'.$id_producto.'"class="btn btn-outline-success">Editar</a>
+            <button onclick="editarProducto('.$id_producto.');"class="btn btn-outline-danger" >Eliminar</button>';
             $arr_Producto[$i] ->options = $opciones;
         }
         $arr_Respuesta['status']= true;

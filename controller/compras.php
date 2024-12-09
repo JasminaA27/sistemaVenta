@@ -76,8 +76,8 @@ if ($tipo=="listar"){
 
             $id_compras = $arr_compras[$i]->id;
             $cantidad = $arr_compras[$i]->cantidad;
-            $opciones = '<a href="'.BASE_URL.'editarCompras/'.$id_compras.'">Editar</a>
-            <button onclick="editarCompras('.$id_compras.');" >Eliminar</button>';
+            $opciones = '<a href="'.BASE_URL.'editarCompras/'.$id_compras.'"class="btn btn-outline-success">Editar</a>
+            <button onclick="editarCompras('.$id_compras.');"class="btn btn-outline-danger" >Eliminar</button>';
             $arr_compras[$i] ->options = $opciones;
         }
         $arr_Respuesta['status']= true;

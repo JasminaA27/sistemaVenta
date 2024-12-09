@@ -119,8 +119,8 @@ if ($tipo=="listar"){
             
             $id_persona = $arr_personas[$i]->id;
             $nombre = $arr_personas[$i]->razon_social;
-            $opciones = '<a href="'.BASE_URL.'editarPersona/'.$id_persona.'">Editar</a>
-            <button onclick="editarPersona('.$id_persona.');" >Eliminar</button>';
+            $opciones = '<a href="'.BASE_URL.'editarPersona/'.$id_persona.'"class="btn btn-outline-success">Editar</a>
+            <button onclick="editarPersona('.$id_persona.');"class="btn btn-outline-danger" >Eliminar</button>';
             $arr_personas[$i] ->options = $opciones;
         }
         $arr_Respuesta['status']= true;

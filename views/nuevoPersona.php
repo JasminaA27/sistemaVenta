@@ -39,7 +39,12 @@
         </div>
         <div class="form-group">
             <label for="rol">Rol:</label>
-            <input type="text" class="form-control" id="rol" name="rol" required>
+            <select  type="text" class="form-control" id="rol" name="rol" required>
+            <option>Seleccione un Rol</option>
+            <option value="trabajador">trabajador</option>
+            <option value="proveedor">Proveedor</option>
+            <option value="administrador">administrador</option>
+        </select>
         </div>
         <!-- <div class="form-group">
             <label for="password">Contraseña:</label>
