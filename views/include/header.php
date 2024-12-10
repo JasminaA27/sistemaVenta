@@ -176,13 +176,15 @@
     Panel Administrador
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>verpanel">Ver Panel</a></li>
-    <li>
+  <li>
                         <button type="button" class="dropdown-item d-flex align-items-center">
                             <i class="bi bi-person-fill me-2"></i> 
                             <?php echo $_SESSION['sesion_ventas_nombres']; ?>
                         </button>
                     </li>
+  
+    <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>panel">Ver Panel</a></li>
+    
     <li>
       <a class="dropdown-item text-danger" href="#" onclick="cerrar_sesion();">Cerrar Sesión</a>
     </li>
