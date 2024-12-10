@@ -39,6 +39,8 @@ class vistaModelo{
             $contenido = "libroreclam";
         } elseif ($vista == "panel") {
             $contenido = "panel";
+        } elseif ($vista == "admin") {
+            $contenido = "admin";
         }else{
 
             $contenido = "404";

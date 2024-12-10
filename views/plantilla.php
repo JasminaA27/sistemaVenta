@@ -7,7 +7,7 @@ $mostrar = new vistasControlador();
 
 $vista = $mostrar->obtenerVistaControlador();
 if ($vista == "principal" || $vista == "login" || $vista == "carrito" || $vista == "perfil" || $vista == "sobrenosotros" || $vista == "registrate"
-|| $vista == "contactanos" || $vista == "formulario" || $vista == "libroreclam" || $vista == "panel" ||$vista == "404") {
+|| $vista == "contactanos" || $vista == "formulario" || $vista == "libroreclam" || $vista == "panel" ||$vista == "admin"||$vista == "404") {
      require_once "./views/" . $vista . ".php";
 } else {
      include "./views/include/header.php";
