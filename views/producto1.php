@@ -52,7 +52,7 @@
                 <div class="container-fluid m-0 p-3 mt-4 row">
                     <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                         <div class="card ">
-                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/318364-500-auto?v=638647734178400000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
+                        <img src="https://esikaperu.vtexassets.com/arquivos/ids/321265-500-auto?v=638676234916600000&width=500&height=auto&aspect=true" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"style="text-align: center;">Desmaquillador Bifásico</h5>
                             <div class="star">

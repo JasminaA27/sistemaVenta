@@ -84,7 +84,7 @@
                                         <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto2"><p>Crema corporal</p></a>
                                         <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto21"><p>Crema de manos</p></a>
                                         <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto21"><p>Jabones</p></a>
-                                        <a class="dropdown-item" href=""><p>Exfoliante corporal</p></a>
+                                        <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto21"><p>Exfoliante corporal</p></a>
                                     </li>
                                     <li><a class="dropdown-item" href=""><h5>Cabello </h5></a>
                                         <a class="dropdown-item" href="<?php echo BASE_URL; ?>producto22"><p>Shampoo y acondicionador</p></a>

@@ -4,23 +4,23 @@ class vistaModelo{
 
     protected static function obtener_vista($vista)
     {
-        $palabras_permitidas = ['usuario', 'esika', 'lbel', 'cyzone', 'descripcion', 'producto1', 
+        $palabras_permitidas = ['usuario','login', 'esika', 'lbel', 'cyzone', 'descripcion', 'producto1', 
         'producto11','producto2', 'producto21', 'producto22', 'producto3', 'producto31',
          'producto4', 'producto41', 'producto5', 'producto51', 'producto52', 'producto32','nuevoProducto','nuevoPersona',
         'nuevoCategoria', 'nuevoCompras','productos', 'personas','categorias','compras','editarProducto','editarPersona',
          'editarCompras','editarCategoria'];
        
-       /* if (!isset($_SESSION['sesion_ventas_id'])) {
+        if (!isset($_SESSION['sesion_ventas_id'])) {
             return "login";
-        }*/
+        }
         if (in_array($vista, $palabras_permitidas)) {
             if (is_file("./views/" . $vista . ".php")) {
                 $contenido = "./views/" . $vista . ".php";
             } else {
                 $contenido = "404";
             }
-        } elseif ($vista == "principal" || $vista == "principal") {
-            $contenido = "principal";
+        } elseif ($vista == "esika" || $vista == "login") {
+            $contenido = "login";
         } elseif ($vista == "login") {
             $contenido = "login";
         } elseif ($vista == "carrito") {

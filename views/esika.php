@@ -119,7 +119,7 @@
                   </div>
                   <div class="col-md-3 col-6 mb-4">
                     <div class="card h-100">
-                      <img src="https://esikaperu.vtexassets.com/arquivos/ids/316249-500-auto?v=638628030130170000&width=500&height=auto&aspect=true" class="card-img-top" alt="Producto 4">
+                      <img src="https://esikaperu.vtexassets.com/arquivos/ids/317080-500-auto?v=638644776153630000&width=500&height=auto&aspect=true" class="card-img-top" alt="Producto 4">
                       <div class="card-body " style="text-align: start;">
              
                         <h5 class="card-title mb-2">Leyenda Absolute Perfume de Hombre, 100 ml</h5>
@@ -134,7 +134,7 @@
                 <div class="row">
                   <div class="col-md-3 col-6 mb-4">
                     <div class="card h-100">
-                      <img src="https://esikaperu.vtexassets.com/arquivos/ids/315524-500-auto?v=638616900163670000&width=500&height=auto&aspect=true" class="card-img-top" alt="Producto 5">
+                      <img src="https://esikaperu.vtexassets.com/arquivos/ids/321839-500-auto?v=638677938361900000&width=500&height=auto&aspect=true" class="card-img-top" alt="Producto 5">
                       <div class="card-body " style="text-align: start;">
                         
                         <h5 class="card-title mb-2">
@@ -146,7 +146,7 @@
                   </div>
                   <div class="col-md-3 col-6 mb-4">
                     <div class="card h-100">
-                      <img src="https://esikaperu.vtexassets.com/arquivos/ids/315532-500-auto?v=638617518189430000&width=500&height=auto&aspect=true" class="card-img-top" alt="Producto 6">
+                      <img src="https://esikaperu.vtexassets.com/arquivos/ids/321827-500-auto?v=638677938268100000&width=500&height=auto&aspect=true" class="card-img-top" alt="Producto 6">
                       <div class="card-body " style="text-align: start;">
                        
                         <h5 class="card-title mb-2">Vibranza Addiction Perfume de Mujer, 45ml</h5>
@@ -201,7 +201,7 @@
                 <div class="row">
                   <div class="col-md-3 col-6 mb-4">
                     <div class="card h-100">
-                      <img src="https://esikaperu.vtexassets.com/arquivos/ids/316121-500-auto?v=638623566186930000&width=500&height=auto&aspect=true" class="card-img-top" alt="Producto 1">
+                      <img src="https://esikaperu.vtexassets.com/arquivos/ids/321820-500-auto?v=638677938161770000&width=500&height=auto&aspect=true" class="card-img-top" alt="Producto 1">
                       <div class="card-body " style="text-align: start;">
                         
                         <h5 class="card-title mb-2">Kromo Black Perfume de Hombre, 90 ml</h5>
@@ -263,7 +263,7 @@
                   </div>
                   <div class="col-md-3 col-6 mb-4">
                     <div class="card h-100">
-                      <img src="https://esikaperu.vtexassets.com/arquivos/ids/307891-500-auto?v=638542608195630000&width=500&height=auto&aspect=true" class="card-img-top" alt="Producto 6">
+                      <img src="https://esikaperu.vtexassets.com/arquivos/ids/317265-500-auto?v=638644836264500000&width=500&height=auto&aspect=true" class="card-img-top" alt="Producto 6">
                       <div class="card-body " style="text-align: start;">
           
                         <h5 class="card-title mb-2">Delineador de Ojos Líquido Punta Plumón Eye PRO</h5>
@@ -275,7 +275,7 @@
                   </div>
                   <div class="col-md-3 col-6 mb-4">
                     <div class="card h-100">
-                      <img src="https://esikaperu.vtexassets.com/arquivos/ids/307816-500-auto?v=638542404225600000&width=500&height=auto&aspect=true" class="card-img-top" alt="Producto 7">
+                      <img src="https://esikaperu.vtexassets.com/arquivos/ids/317176-500-auto?v=638644806199000000&width=500&height=auto&aspect=true" class="card-img-top" alt="Producto 7">
                       <div class="card-body " style="text-align: start;">
                        
                         <h5 class="card-title mb-2">Delineador de Ojos Líquido Punta Plumón Eye PRO</h5>
@@ -286,7 +286,7 @@
                   </div>
                   <div class="col-md-3 col-6 mb-4">
                     <div class="card h-100">
-                      <img src="https://esikaperu.vtexassets.com/arquivos/ids/315532-500-auto?v=638617518189430000&width=500&height=auto&aspect=true" class="card-img-top" alt="Producto 8">
+                      <img src="https://esikaperu.vtexassets.com/arquivos/ids/315538-500-auto?v=638617518321030000&width=500&height=auto&aspect=true" class="card-img-top" alt="Producto 8">
                       <div class="card-body " style="text-align: start;">
                         <h5 class="card-title mb-2">Vibranza Addiction Perfume de Mujer, 45ml</h5>
                         <p class="card-text">S/ 50<span class="discount"> <s class="text-muted">S/ 95</s></span></p>

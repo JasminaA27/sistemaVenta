@@ -97,7 +97,7 @@ if ($tipo=="listar"){
             $nombre = $arr_Producto[$i]->nombre;
             // localhost//editar-producto/id del productto 4     // opcion eliminar llama a la funcion eliminar producto/id del producto
             $opciones = '<a href="'.BASE_URL.'editarProducto/'.$id_producto.'"class="btn btn-outline-success">Editar</a>
-            <button onclick="editarProducto('.$id_producto.');"class="btn btn-outline-danger" >Eliminar</button>';
+            <button onclick="eliminarProducto('.$id_producto.');"class="btn btn-outline-danger" >Eliminar</button>';
             $arr_Producto[$i] ->options = $opciones;
         }
         $arr_Respuesta['status']= true;
@@ -182,5 +182,18 @@ if($tipo=="actualizar"){
         }
     }
 }
-
+if($tipo=="eliminar"){
+    
+    if ($_POST){
+    $id_producto = $_POST['id_producto'];
+    $arr_Respuesta = $objProducto->eliminarProducto($id_producto);
+    //print_r($arr_Respuesta);
+    if (empty($arr_Respuesta)) {
+        $response = array('status'=> false);
+    }else {
+        $response = array('status'=> true);
+    }
+    echo json_encode($response);
+  }
+}
 ?>
