@@ -30,6 +30,7 @@
                 <form class="d-flex col-5" role="search" style="margin-left:100px;">
                     <input class="form-control me-2" type="text" placeholder="Estoy buscando....." aria-label="Search">
                 </form>
+                
                 <div class="row justify-content-end">
                   <div class="col-auto" style="margin-top: -42px; justify-content: center;">
                     <a href="<?php echo BASE_URL; ?>descripcion">
@@ -48,7 +49,9 @@
                     </a>
                   </div>
               </div>
+              
             </div>
+            
             <div class="col-12 d-flex">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -160,8 +163,32 @@
                         aria-expanded="false">
                        | Quiero ser consultora
                     </a>
-                    <li><a class="dropdown-item" href="#" onclick="cerrar_sesion();">Cerrar Sesión</a></li>
                         </ul>
+
+                        <div class="dropdown">
+  <button 
+    class="btn btn-secondary dropdown-toggle" 
+    type="button" 
+    id="dropdownMenuButton" 
+    data-bs-toggle="dropdown" 
+    aria-expanded="false"
+  >
+    Panel Administrador
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>verpanel">Ver Panel</a></li>
+    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center">
+                            <i class="bi bi-person-fill me-2"></i> 
+                            <?php echo $_SESSION['sesion_ventas_nombres']; ?>
+                        </button>
+                    </li>
+    <li>
+      <a class="dropdown-item text-danger" href="#" onclick="cerrar_sesion();">Cerrar Sesión</a>
+    </li>
+  </ul>
+</div>
+
                 </div>
                 
     </nav>
