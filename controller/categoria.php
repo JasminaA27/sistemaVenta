@@ -24,7 +24,7 @@ if ($tipo == "registrar") {
             $arrCategoria = $objCategoria->registrarCategoria($nombre, $detalle);
 
             // Comprobamos si el registro fue exitoso
-            if ($arrCategoria->p_id > 0) {
+            if ($arrCategoria->id > 0) {
                 $arr_Respuesta = array(
                     'status' => true,
                     'mensaje' => 'Categoría registrada exitosamente'

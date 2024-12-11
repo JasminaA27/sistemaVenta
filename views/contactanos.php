@@ -19,7 +19,7 @@
     </style>
 </head>
 <body>
-    <img src="../img/img.png" alt="" class="img-fluid" alt="Responsive Image">
+    <img src="./views/plantilla/img/img.png" alt="" class="img-fluid" alt="Responsive Image">
     <section class="contact-section text-center" style="background-color:#f7c6d4; height: 450px; margin-top: 10px;">
         <div class="container">
             <h2 class="font-weight-bold">Contactate con nosotros, estamos para ayudarte</h2>

@@ -120,7 +120,7 @@ if ($tipo=="listar"){
             $id_persona = $arr_personas[$i]->id;
             $nombre = $arr_personas[$i]->razon_social;
             $opciones = '<a href="'.BASE_URL.'editarPersona/'.$id_persona.'"class="btn btn-outline-success">Editar</a>
-            <button onclick="editarPersona('.$id_persona.');"class="btn btn-outline-danger" >Eliminar</button>';
+            <button onclick="eliminarPersona('.$id_persona.');"class="btn btn-outline-danger" >Eliminar</button>';
             $arr_personas[$i] ->options = $opciones;
         }
         $arr_Respuesta['status']= true;
@@ -201,6 +201,20 @@ if($tipo=="actualizar"){
         echo json_encode($arr_Respuesta);
         }
     }
+}
+if($tipo=="eliminar"){
+    
+    if ($_POST){
+    $id_persona = $_POST['id_persona'];
+    $arr_Respuesta = $objPersona->eliminarPersona($id_persona);
+    //print_r($arr_Respuesta);
+    if (empty($arr_Respuesta)) {
+        $response = array('status'=> false);
+    }else {
+        $response = array('status'=> true);
+    }
+    echo json_encode($response);
+  }
 }
 
 ?>

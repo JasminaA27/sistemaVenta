@@ -87,6 +87,13 @@ $provincia, $distrito, $cod_postal, $direccion, $rol, $password){
     return$sql;
 
 }
+public function eliminarPersona($id){
+    $sql = $this->conexion->query("CALL eliminarPersona('{$id}')");
+    $sql = $sql->fetch_object();
+    return$sql;
+
+}
+
 }
 
 ?>

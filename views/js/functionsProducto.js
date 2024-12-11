@@ -13,6 +13,8 @@ async function listar_productos() {
                 <th>${cont}</th>
                 <td>${item.codigo}</td>
                 <td>${item.nombre}</td>
+                <td>${item.detalle}</td>
+                <td>${item.precio}</td>
                 <td>${item.stock}</td>
                 <td>${item.categoria.nombre}</td>
                 <td>${item.proveedor.razon_social}</td>
@@ -182,18 +184,49 @@ async function actualizarProducto() {
 }
 async function eliminarProducto(id) {
     swal({
-        title: "¿Realmente desea eliminar este producto?",
-        text:'',
-        icon:"Warning",
-        buttons: true,
-        dangerMode:true
-    }).then((willDelete)=>{
+        title: "Confirmar eliminación",
+        text: "¿Estás seguro de que deseas eliminar este producto? Esta acción no se puede deshacer.",
+        icon: "warning",
+        buttons: {
+            cancel: {
+                text: "Cancelar",
+                value: null,
+                visible: true,
+                className: "btn btn-secondary",
+                closeModal: true,
+            },
+            confirm: {
+                text: "Eliminar",
+                value: true,
+                visible: true,
+                className: "btn btn-danger",
+                closeModal: false,
+            }
+        },
+        dangerMode: true,
+    }).then((willDelete) => {
         if (willDelete) {
-            fnt_eliminar(id);
+            fnt_eliminar(id)
+                
         }
-
+          
     });
 }
+
+// async function eliminarProducto(id) {
+//     swal({
+//         title: "¿Realmente desea eliminar este producto?",
+//         text:'',
+//         icon:"Warning",
+//         buttons: true,
+//         dangerMode:true
+//     }).then((willDelete)=>{
+//         if (willDelete) {
+//             fnt_eliminar(id);
+//         }
+
+//     });
+// }
 async function fnt_eliminar(id) {
     const formData = new FormData();
     formData.append('id_producto',id);
@@ -206,7 +239,7 @@ async function fnt_eliminar(id) {
         });
         json = await respuesta.json();
         if(json.status){
-            swal("Eliminar","eliminado correctamente","success");
+            swal("Eliminado","Producto eliminado correctamente","success");
             document.querySelector('#fila'+id).remove();
         }else{
             swal("Eliminar","error al eliminar","warning");
