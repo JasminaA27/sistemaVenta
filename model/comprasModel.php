@@ -11,8 +11,8 @@ class comprasModel {
         $this->conexion = $this->conexion->connect();
     }
     // Método para registrar una compra
-    public function registrarCompras($id_producto, $cantidad, $precio, $fecha_compra, $id_trabajador) {
-        $sql = $this->conexion->query("CALL insertCompras('{$id_producto}', '{$cantidad}', '{$precio}', '{$fecha_compra}', '{$id_trabajador}')");
+    public function registrarCompras($id_producto, $cantidad, $precio, $id_trabajador) {
+        $sql = $this->conexion->query("CALL insertCompras('{$id_producto}', '{$cantidad}', '{$precio}', '{$id_trabajador}')");
         $sql = $sql->fetch_object();
         return $sql;
     }
@@ -32,8 +32,8 @@ class comprasModel {
     $sql = $sql->fetch_object();
     return $sql;
 }
-public function actualizarCompras($id, $id_producto, $cantidad, $precio, $fecha_compra, $id_trabajador) {
-    $sql = $this->conexion->query("CALL actualizarCompras('{$id}','{$id_producto}', '{$cantidad}', '{$precio}', '{$fecha_compra}', '{$id_trabajador}')");
+public function actualizarCompras($id, $id_producto, $cantidad, $precio, $id_trabajador) {
+    $sql = $this->conexion->query("CALL actualizarCompras('{$id}','{$id_producto}', '{$cantidad}', '{$precio}', '{$id_trabajador}')");
     $sql = $sql->fetch_object();
     return $sql;
 }

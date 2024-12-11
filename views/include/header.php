@@ -36,6 +36,7 @@
                     <div class="col">
                         <form class="d-flex" role="search">
                             <input class="form-control me" type="text" placeholder="Estoy buscando..." aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit" style="margin-left: 10px ">Buscar</button>
                         </form>
                     </div>
                     <!-- Icons Section -->

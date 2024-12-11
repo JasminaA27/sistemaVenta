@@ -2,7 +2,7 @@
     FORMULARIO DE EDITAR COMPRAS
     <form action="" class="p-4 border rounded shadow" id="frmActualizar">
           <!--impust ocultos-->
-    <input type="hidden" id="id_producto" name="id_producto">
+    <input type="hidden" id="id_compra" name="id_compra">
 
         <div class="form-group">
             <label for="producto">ID Producto:</label>
@@ -18,10 +18,10 @@
             <label for="precio">Precio:</label>
             <input type="number" class="form-control" id="precio" name="precio" step="0.01" required>
         </div>
-        <div class="form-group">
+        <!-- <div class="form-group">
             <label for="fecha_compra">Fecha de Compra:</label>
             <input type="datetime" class="form-control" id="fecha_compra" name="fecha_compra" required>
-        </div>
+        </div> -->
         <div class="form-group">
             <label for="trabajador">ID Trabajador:</label>
             <select name= "trabajador" id="trabajador" class="form-control" required>

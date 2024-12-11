@@ -15,10 +15,10 @@
             <label for="precio">Precio:</label>
             <input type="number" class="form-control" id="precio" name="precio" step="0.01" required>
         </div>
-        <div class="form-group">
+       <!--  <div class="form-group">
             <label for="fecha_compra">Fecha de Compra:</label>
             <input type="datetime-local" class="form-control" id="fecha_compra" name="fecha_compra" required>
-        </div>
+        </div> -->
         <div class="form-group">
             <label for="trabajador">ID Trabajador:</label>
             <select name= "trabajador" id="trabajador" class="form-control" required>

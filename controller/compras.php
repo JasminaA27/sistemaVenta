@@ -17,12 +17,12 @@ if ($tipo == "registrar") {
         $id_producto = $_POST['producto'];
         $cantidad = $_POST['cantidad'];
         $precio = $_POST['precio'];
-        $fecha_compra = $_POST['fecha_compra'];
+        /* $fecha_compra = $_POST['fecha_compra']; */
         $id_trabajador = $_POST['trabajador'];
 
         // Validación de campos vacíos
         if ($id_producto == "" || $cantidad == "" || $precio == "" || 
-            $fecha_compra == "" || $id_trabajador == ""
+           /*  $fecha_compra == "" || */ $id_trabajador == ""
         ) {
             // Respuesta si hay campos vacíos
             $arr_Respuesta = array(
@@ -32,7 +32,7 @@ if ($tipo == "registrar") {
         } else {
             // Llamada al método del modelo para registrar la compra
             $arrProducto = $objcompras->registrarCompras(
-                $id_producto, $cantidad, $precio, $fecha_compra, $id_trabajador
+                $id_producto, $cantidad, $precio, $id_trabajador
             );
 
             // Comprobamos si el registro fue exitoso
@@ -107,17 +107,17 @@ if($tipo=="actualizar"){
 
     if ($_POST) {
         // Capturamos los datos enviados desde el formulario de compra
-        $id_producto = $_POST['id_producto'];
+        $id_compra = $_POST['id_compra'];
         $id_producto = $_POST['producto'];
         $cantidad = $_POST['cantidad'];
         $precio = $_POST['precio'];
-        $fecha_compra = $_POST['fecha_compra'];
+        /* $fecha_compra = $_POST['fecha_compra']; */
         $id_trabajador = $_POST['trabajador'];
        
 
         // Validación de campos vacíos
         if ($id_producto == "" || $cantidad == "" || $precio == "" || 
-            $fecha_compra == "" || $id_trabajador == ""
+             $id_trabajador == ""
         ) {
             // Respuesta si hay campos vacíos
             $arr_Respuesta = array(
@@ -127,7 +127,7 @@ if($tipo=="actualizar"){
         } else {
             
             $arrProducto = $objcompras->actualizarCompras(
-                $id_producto, $cantidad, $precio, $fecha_compra, $id_trabajador,$id_producto
+                $id_compra, $id_producto, $cantidad, $precio, $id_trabajador
             );
 
             if ($arrProducto->p_id > 0) {

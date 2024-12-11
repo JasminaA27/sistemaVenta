@@ -42,13 +42,13 @@ async function registrarCompras() {
     let id_producto = document.getElementById('producto').value;
     let cantidad = document.querySelector('#cantidad').value;
     let precio = document.querySelector('#precio').value;
-    let fecha_compra = document.querySelector('#fecha_compra').value;
+   
     let id_trabajador = document.querySelector('#trabajador').value;
 
     // Validación de campos vacíos
     if (
         id_producto === "" || cantidad === "" || precio === "" || 
-        fecha_compra === "" || id_trabajador === ""
+         id_trabajador === ""
     ) {
         alert("Error: ¡Hay campos vacíos!");
         return;
@@ -138,14 +138,12 @@ async function ver_compras(id) {
         // envia solicitud al controlador compras
         json = await respuesta.json();
         if (json.status) {
-            document.querySelector('#id_producto').value = json.contenido.id;
+            document.querySelector('#id_compra').value = json.contenido.id;
             document.querySelector('#producto').value = json.contenido.id_producto;
             document.querySelector('#cantidad').value = json.contenido.cantidad;
-            document.querySelector('#precio').value = json.contenido.precio;
-            document.querySelector('#fecha_compra').value = json.contenido.fecha_compra;
+            document.querySelector('#precio').value = json.contenido.precio;        
             document.querySelector('#trabajador').value = json.contenido.id_trabajador;
             
-           
       
         }else{
             window.location = base_url+"compras";
