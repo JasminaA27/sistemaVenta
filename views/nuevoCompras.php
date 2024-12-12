@@ -1,4 +1,4 @@
-<a href="<?php echo BASE_URL; ?>panel"onclick="redirigir()" class="btn btn-link" style="color: black;"> Inicio</a>
+
 <div class="container">
     FORMULARIO DE RESGISTRO DE COMPRAS
     <form action="" class="p-4 border rounded shadow" id="frmRegistrar">
@@ -28,6 +28,7 @@
         </div>
       <br>
         <button type="button" class="btn btn-success" onclick="registrarCompras();">Registrar</button>
+        <a href="<?php echo BASE_URL; ?>panel"onclick="redirigir()" class="btn btn-link" style="color: black;">&larr; Regresar</a>
 </div>
 <script src="<?php echo BASE_URL;?>views/js/functionsCompras.js"></script>
 <script>listar_productos();</script>

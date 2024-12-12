@@ -172,6 +172,28 @@ async function eliminarPersona(id) {
         }
           
     });
+    async function fnt_eliminar(id) {
+        const formData = new FormData();
+        formData.append('id_persona',id);
+        try{
+            let respuesta = await fetch(base_url+'controller/persona.php?tipo=eliminar',{
+                method: 'POST',
+                mode: 'cors',
+                cache: 'no-cache',
+                body: formData
+            });
+            json = await respuesta.json();
+            if(json.status){
+                swal("Eliminado","Persona eliminado correctamente","success");
+                document.querySelector('#fila'+id).remove();
+            }else{
+                swal("Eliminar",json.mensaje,"warning");
+            }
+        } catch (e) {
+            console.log("ocurrio error" + e);
+            
+        }
+    }
 }
 
 // async function eliminarProducto(id) {
@@ -188,25 +210,4 @@ async function eliminarPersona(id) {
 
 //     });
 // }
-async function fnt_eliminar(id) {
-    const formData = new FormData();
-    formData.append('id_persona',id);
-    try{
-        let respuesta = await fetch(base_url+'controller/persona.php?tipo=eliminar',{
-            method: 'POST',
-            mode: 'cors',
-            cache: 'no-cache',
-            body: formData
-        });
-        json = await respuesta.json();
-        if(json.status){
-            swal("Eliminado","Persona eliminado correctamente","success");
-            document.querySelector('#fila'+id).remove();
-        }else{
-            swal("Eliminar","error al eliminar","warning");
-        }
-    } catch (e) {
-        console.log("ocurrio error" + e);
-        
-    }
-}
+

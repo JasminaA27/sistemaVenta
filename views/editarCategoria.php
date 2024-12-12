@@ -1,4 +1,4 @@
-<a href="<?php echo BASE_URL; ?>categorias"onclick="redirigir()" class="btn btn-link" style="color: black;"> Inicio</a>
+<a href="<?php echo BASE_URL; ?>categorias"onclick="redirigir()" class="btn btn-link" style="color: black;"> Regresar</a>
 <div class="container">
     FORMULARIO DE EDITAR CATEGORIA
     <form action="" class="p-4 border rounded shadow" id="frmActualizar">
