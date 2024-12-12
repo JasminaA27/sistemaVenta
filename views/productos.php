@@ -1,3 +1,5 @@
+
+<a href="<?php echo BASE_URL; ?>panel"onclick="redirigir()" class="btn btn-link" style="color: black;"> Inicio</a>
 <div class="container-fluid py-5">
     <div class="row justify-content-center">
         <div class="col-12">

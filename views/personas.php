@@ -1,3 +1,4 @@
+<a href="<?php echo BASE_URL; ?>panel"onclick="redirigir()" class="btn btn-link" style="color: black;"> Inicio</a>
 <div class="col-12">
     <div class="table-responsive">
         <table class="table table-bordered table-striped table-hover">

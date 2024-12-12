@@ -1,8 +1,9 @@
+<a href="<?php echo BASE_URL; ?>panel"onclick="redirigir()" class="btn btn-link" style="color: black;"> Inicio</a>
 <div class="container">
     FORMULARIO DE RESGISTRO DE COMPRAS
     <form action="" class="p-4 border rounded shadow" id="frmRegistrar">
         <div class="form-group">
-            <label for="producto">ID Producto:</label>
+            <label for="producto">Producto:</label>
             <select name= "producto" id="producto" class="form-control" required>
                 <option>Seleccione un producto</option>
             </select>
@@ -20,14 +21,13 @@
             <input type="datetime-local" class="form-control" id="fecha_compra" name="fecha_compra" required>
         </div> -->
         <div class="form-group">
-            <label for="trabajador">ID Trabajador:</label>
+            <label for="trabajador">Trabajador:</label>
             <select name= "trabajador" id="trabajador" class="form-control" required>
                 <option>Seleccione un Trabajador</option>
             </select>
         </div>
-      
+      <br>
         <button type="button" class="btn btn-success" onclick="registrarCompras();">Registrar</button>
-    </form>
 </div>
 <script src="<?php echo BASE_URL;?>views/js/functionsCompras.js"></script>
 <script>listar_productos();</script>

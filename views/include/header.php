@@ -48,46 +48,60 @@
                             <img src="<?php echo BASE_URL; ?>./views/plantilla/img/carrito.png" width="45" height="45" alt="Carrito">
                         </a>
                         
-                        <div class="dropdown">
+ <div class="dropdown">
     <a 
-        class="btn btn-outline-dark" d-flex align-items-center justify-content-between
+        class="btn btn-outline-dark d-flex align-items-center justify-content-between py-2 px-3 "
         href="#" 
         id="dropdownMenuButton" 
         data-bs-toggle="dropdown" 
         aria-expanded="false"
     >
-        <span>Panel Administrador</span>
-        <i class="bi bi-caret-down-fill ms-2"></i>
+    <span>Panel Admin</span>
+        <i class="bi bi-chevron-down" ></i>
     </a>
-    <div class="dropdown-menu p-3 shadow" aria-labelledby="dropdownMenuButton">
+    <div 
+        class="dropdown-menu dropdown-menu-end p-4 shadow-lg rounded-4 border-0" 
+        aria-labelledby="dropdownMenuButton" 
+        style="min-width: 250px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
+    >
         <!-- Usuario -->
-        <div class="d-flex align-items-center mb-2">
-            <i class="bi bi-person-fill me-2"></i>
-            <span><?php echo $_SESSION['sesion_ventas_nombres']; ?></span>
+        <div class="d-flex align-items-center mb-4" style="gap: 10px;">
+            <div>
+            <div >
+            <a> <img src="<?php echo BASE_URL; ?>./views/plantilla/img/usu.png"style="width: 50px; height: 50px;
+             border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 24px;" ></a>
+            </div>
+                
+            
+                <i class="bi bi-person"></i>
+            </div>
+            <div>
+                <p style="margin: 0; font-weight: 600;"><?php echo $_SESSION['sesion_ventas_nombres']; ?></p>
+                <small style="color: #6c757d;">Administrador</small>
+            </div>
         </div>
         <hr class="dropdown-divider">
         <!-- Opciones -->
         <ul class="list-unstyled mb-0">
             <li>
                 <a class="dropdown-item" href="<?php echo BASE_URL; ?>perfil">
-                    <i class="bi bi-person-circle me-2"></i> Perfil
+                    <i class="bi bi-person-circle me-3"></i> Mi Perfil
                 </a>
             </li>
             <li>
                 <a class="dropdown-item" href="<?php echo BASE_URL; ?>panel">
-                    <i class="bi bi-layout-text-sidebar-reverse me-2"></i> Ver Panel
+                    <i class="bi bi-layout-text-sidebar-reverse me-3"></i> Ver Panel
                 </a>
             </li>
             <li>
                 <a class="dropdown-item text-danger" href="#" onclick="cerrar_sesion();">
-                    <i class="bi bi-box-arrow-right me-2"></i> Cerrar Sesión
+                    <i class="bi bi-box-arrow-right me-3"></i> Cerrar Sesión
                 </a>
             </li>
         </ul>
     </div>
 </div>
-
-                        
+   
                     </div>
                     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg" style="background-color:#F5A5EC ">
@@ -191,9 +205,9 @@
                                     </li>
                                 </ul>
                             </li>
-                            <a style="margin-left: 250px;" class="nav-link " href="<?php echo BASE_URL; ?>sobrenosotros" role="button" 
+                            <a style="margin-left: auto;" class="nav-link " href="<?php echo BASE_URL; ?>sobrenosotros" role="button" 
                         aria-expanded="false">
-                       | Sobre nostros
+                       | Sobre nostros 
                     </a>
                     <a class="nav-link " href="<?php echo BASE_URL; ?>contactanos" role="button" 
                         aria-expanded="false">

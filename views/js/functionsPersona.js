@@ -75,9 +75,9 @@ async function registrarPersona() {
         let json = await respuesta.json();
         if (json.status) {
             swal("Registro", json.mensaje, "success");
-            frmRegistrar.reset(); // Limpiar el formulario después del registro exitoso
+            frmRegistrar.reset();  // Limpiar el formulario después del registro exitoso
         } else {
-            swal("Registro", json.mensaje, "error");
+            swal("Error", json.mensaje, "error");
         }
 
         console.log(json);

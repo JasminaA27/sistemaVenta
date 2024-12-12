@@ -9,7 +9,10 @@
             <label for="detalle">Detalle:</label>
             <input type="text" class="form-control" id="detalle" name="detalle" required>
         </div>
+        <br>
         <button type="button" class="btn btn-success" onclick="registrarCategoria();">Registrar</button>
+
+        <a href="<?php echo BASE_URL; ?>panel"onclick="redirigir()" class="btn btn-link" style="color: black;">&larr; Regresar</a>
     </form>
 </div>
 <script src="<?php echo BASE_URL;?>views/js/functionsCategoria.js"></script>

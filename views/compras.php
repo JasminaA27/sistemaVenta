@@ -1,3 +1,4 @@
+<a href="<?php echo BASE_URL; ?>panel"onclick="redirigir()" class="btn btn-link" style="color: black;"> Inicio</a>
 <div class="container-fluid py-5"> <!-- Cambiado a container-fluid para más ancho -->
     <div class="row justify-content-center">
         <div class="col-lg-11 col-md-12"> <!-- Incrementar ancho del contenedor interno -->

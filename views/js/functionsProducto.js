@@ -64,8 +64,9 @@ async function registrarProducto() {
     json = await respuesta.json();
     if(json.status){
         swal("registro", json.mensaje, "success");
+        frmRegistrar.reset(); 
     }else{
-        swal("registro", json.mensaje, "error");
+        swal("Error", json.mensaje, "error");
     }
 
     console.log(json);

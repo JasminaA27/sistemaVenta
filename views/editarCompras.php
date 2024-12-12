@@ -1,3 +1,4 @@
+<a href="<?php echo BASE_URL; ?>compras"onclick="redirigir()" class="btn btn-link" style="color: black;"> Regresar</a>
 <div class="container">
     FORMULARIO DE EDITAR COMPRAS
     <form action="" class="p-4 border rounded shadow" id="frmActualizar">
@@ -5,7 +6,7 @@
     <input type="hidden" id="id_compra" name="id_compra">
 
         <div class="form-group">
-            <label for="producto">ID Producto:</label>
+            <label for="producto">Producto:</label>
             <select name= "producto" id="producto" class="form-control" required>
                 <option>Seleccione un producto</option>
             </select>
@@ -23,7 +24,7 @@
             <input type="datetime" class="form-control" id="fecha_compra" name="fecha_compra" required>
         </div> -->
         <div class="form-group">
-            <label for="trabajador">ID Trabajador:</label>
+            <label for="trabajador">Trabajador:</label>
             <select name= "trabajador" id="trabajador" class="form-control" required>
                 <option>Seleccione un Trabajador</option>
             </select>

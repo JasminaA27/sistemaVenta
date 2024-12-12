@@ -44,6 +44,7 @@
             <option value="trabajador">trabajador</option>
             <option value="proveedor">Proveedor</option>
             <option value="administrador">administrador</option>
+            <option value="administrador">usuario</option>
         </select>
         </div>
         <!-- <div class="form-group">
@@ -58,7 +59,11 @@
             <label for="fecha_inicio">Fecha de Registro:</label>
             <input type="date" class="form-control" id="fecha_registro" name="fecha_registro" required>
         </div>  -->
+        <br>
         <button type="button" class="btn btn-success" onclick="registrarPersona();">Registrar</button>
+
+
+        <a href="<?php echo BASE_URL; ?>panel"onclick="redirigir()" class="btn btn-link" style="color: black;">&larr; Regresar</a>
     </form>
 </div>
 <script src="<?php echo BASE_URL;?>views/js/functionsPersona.js"></script>

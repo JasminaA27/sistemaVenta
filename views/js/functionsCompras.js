@@ -67,7 +67,7 @@ async function registrarCompras() {
         let json = await respuesta.json();
         if (json.status) {
             swal("Compra Registrada", json.mensaje, "success");
-            
+            frmRegistrar.reset(); 
         } else {
             swal("Error", json.mensaje, "error");
         }
@@ -233,11 +233,31 @@ async function fnt_eliminar(id) {
         });
         json = await respuesta.json();
         if(json.status){
-            swal("Eliminado","Compra eliminado correctamente","success");
+            swal({
+                title: "Eliminado",
+                text: "Compra eliminada correctamente",
+                icon: "success",
+                buttons: {
+                    confirm: {
+                        text: "Aceptar",
+                        className: "btn btn-success",
+                    }
+                }
+            });
             document.querySelector('#fila'+id).remove();
-        }else{
-            swal("Eliminar","error al eliminar","warning");
-        }
+        } else {
+            swal({
+                title: "Eliminar",
+                text: "Error al eliminar",
+                icon: "warning",
+                buttons: {
+                    confirm: {
+                        text: "Reintentar",
+                        className: "btn btn-warning",
+                    }
+                }
+            });
+        }        
     } catch (e) {
         console.log("ocurrio error" + e);
         

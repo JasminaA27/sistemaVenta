@@ -59,7 +59,7 @@ async function registrarCategoria() {
             swal("Registro", json.mensaje, "success");
             frmRegistrar.reset(); // Limpiar el formulario después del registro exitoso
         } else {
-            swal("Registro", json.mensaje, "error");
+            swal("Error", json.mensaje, "error");
         }
 
         console.log(json);
@@ -184,6 +184,4 @@ async function fnt_eliminar(id) {
         
     }
 }
-
-
 
