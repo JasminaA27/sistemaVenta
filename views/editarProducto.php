@@ -27,7 +27,7 @@
         <div class="form-group">
             <label for="categoria">Categoría:</label>
             <select name="categoria" id="categoria"class="form-control" required>
-            <option>Seleccione una categoria</option>
+            
             </select>
         </div>
         <div class="form-group">
@@ -42,7 +42,7 @@
         <div class="form-group">
             <label for="proveedor">Proveedor:</label>
             <select name= "proveedor" id="proveedor" class="form-control" required>
-                <option>Seleccione un proveedor</option>
+                
             </select>
         </div>
         <button type="button" class="btn btn-success" onclick="actualizarProducto();">Actualizar</button>

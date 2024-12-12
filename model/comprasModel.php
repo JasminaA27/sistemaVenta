@@ -37,6 +37,12 @@ public function actualizarCompras($id, $id_producto, $cantidad, $precio, $id_tra
     $sql = $sql->fetch_object();
     return $sql;
 }
+public function eliminarCompra($id){
+    $sql = $this->conexion->query("CALL eliminarCompra('{$id}')");
+    $sql = $sql->fetch_object();
+    return$sql;
+
+}
 
 }
 

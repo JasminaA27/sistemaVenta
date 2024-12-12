@@ -114,5 +114,19 @@ if($tipo=="actualizar"){
         }
     }
 }
+if($tipo=="eliminar"){
+    
+    if ($_POST){
+    $id_categoria = $_POST['id_compra'];
+    $arr_Respuesta = $objcategoria->eliminarCategoria($id_categoria);
+    //print_r($arr_Respuesta);
+    if (empty($arr_Respuesta)) {
+        $response = array('status'=> false);
+    }else {
+        $response = array('status'=> true);
+    }
+    echo json_encode($response);
+  }
+}
 
 ?>

@@ -77,7 +77,7 @@ if ($tipo=="listar"){
             $id_compras = $arr_compras[$i]->id;
             $cantidad = $arr_compras[$i]->cantidad;
             $opciones = '<a href="'.BASE_URL.'editarCompras/'.$id_compras.'"class="btn btn-outline-success">Editar</a>
-            <button onclick="editarCompras('.$id_compras.');"class="btn btn-outline-danger" >Eliminar</button>';
+            <button onclick="eliminarCompra('.$id_compras.');"class="btn btn-outline-danger" >Eliminar</button>';
             $arr_compras[$i] ->options = $opciones;
         }
         $arr_Respuesta['status']= true;
@@ -148,5 +148,20 @@ if($tipo=="actualizar"){
         
   }
  }
+
+ if($tipo=="eliminar"){
+    
+    if ($_POST){
+    $id_compras = $_POST['id_compra'];
+    $arr_Respuesta = $objcompras->eliminarCompra($id_compras);
+    //print_r($arr_Respuesta);
+    if (empty($arr_Respuesta)) {
+        $response = array('status'=> false);
+    }else {
+        $response = array('status'=> true);
+    }
+    echo json_encode($response);
+  }
+}
 
  

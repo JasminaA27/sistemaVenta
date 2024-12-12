@@ -117,5 +117,73 @@ async function actualizarCategoria() {
     console.log("Oops, ocurrio un error"+e);
    }
 }
+async function eliminarCategoria(id) {
+    swal({
+        title: "Confirmar eliminación",
+        text: "¿Estás seguro de que deseas eliminar este producto? Esta acción no se puede deshacer.",
+        icon: "warning",
+        buttons: {
+            cancel: {
+                text: "Cancelar",
+                value: null,
+                visible: true,
+                className: "btn btn-secondary",
+                closeModal: true,
+            },
+            confirm: {
+                text: "Eliminar",
+                value: true,
+                visible: true,
+                className: "btn btn-danger",
+                closeModal: false,
+            }
+        },
+        dangerMode: true,
+    }).then((willDelete) => {
+        if (willDelete) {
+            fnt_eliminar(id)
+                
+        }
+          
+    });
+}
+
+// async function eliminarProducto(id) {
+//     swal({
+//         title: "¿Realmente desea eliminar este producto?",
+//         text:'',
+//         icon:"Warning",
+//         buttons: true,
+//         dangerMode:true
+//     }).then((willDelete)=>{
+//         if (willDelete) {
+//             fnt_eliminar(id);
+//         }
+
+//     });
+// }
+async function fnt_eliminar(id) {
+    const formData = new FormData();
+    formData.append('id_compra',id);
+    try{
+        let respuesta = await fetch(base_url+'controller/categoria.php?tipo=eliminar',{
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: formData
+        });
+        json = await respuesta.json();
+        if(json.status){
+            swal("Eliminado","Compra eliminado correctamente","success");
+            document.querySelector('#fila'+id).remove();
+        }else{
+            swal("Eliminar","error al eliminar","warning");
+        }
+    } catch (e) {
+        console.log("ocurrio error" + e);
+        
+    }
+}
+
 
 
