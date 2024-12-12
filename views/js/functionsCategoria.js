@@ -164,7 +164,7 @@ async function eliminarCategoria(id) {
 // }
 async function fnt_eliminar(id) {
     const formData = new FormData();
-    formData.append('id_compra',id);
+    formData.append('id_categoria',id);
     try{
         let respuesta = await fetch(base_url+'controller/categoria.php?tipo=eliminar',{
             method: 'POST',
@@ -174,7 +174,7 @@ async function fnt_eliminar(id) {
         });
         json = await respuesta.json();
         if(json.status){
-            swal("Eliminado","Compra eliminado correctamente","success");
+            swal("Eliminado","Categoria eliminado correctamente","success");
             document.querySelector('#fila'+id).remove();
         }else{
             swal("Eliminar","error al eliminar","warning");

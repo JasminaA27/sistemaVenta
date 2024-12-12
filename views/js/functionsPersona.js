@@ -200,7 +200,7 @@ async function fnt_eliminar(id) {
         });
         json = await respuesta.json();
         if(json.status){
-            swal("Eliminado","Producto eliminado correctamente","success");
+            swal("Eliminado","Persona eliminado correctamente","success");
             document.querySelector('#fila'+id).remove();
         }else{
             swal("Eliminar","error al eliminar","warning");

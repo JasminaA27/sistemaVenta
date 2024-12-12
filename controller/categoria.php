@@ -117,7 +117,7 @@ if($tipo=="actualizar"){
 if($tipo=="eliminar"){
     
     if ($_POST){
-    $id_categoria = $_POST['id_compra'];
+    $id_categoria = $_POST['id_categoria'];
     $arr_Respuesta = $objcategoria->eliminarCategoria($id_categoria);
     //print_r($arr_Respuesta);
     if (empty($arr_Respuesta)) {

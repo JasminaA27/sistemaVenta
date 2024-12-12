@@ -10,9 +10,9 @@ class vistaModelo{
         'nuevoCategoria', 'nuevoCompras','productos', 'personas','categorias','compras','editarProducto','editarPersona',
          'editarCompras','editarCategoria'];
        
-        /*if (!isset($_SESSION['sesion_ventas_id'])) {
+        if (!isset($_SESSION['sesion_ventas_id'])) {
             return "login";
-        }*/
+        }
         if (in_array($vista, $palabras_permitidas)) {
             if (is_file("./views/" . $vista . ".php")) {
                 $contenido = "./views/" . $vista . ".php";
