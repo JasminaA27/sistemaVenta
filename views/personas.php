@@ -1,4 +1,4 @@
-<a href="<?php echo BASE_URL; ?>panel"onclick="redirigir()" class="btn btn-link" style="color: black;"> Inicio</a>
+
 <div class="col-12">
     <div class="table-responsive">
         <table class="table table-bordered table-striped table-hover">
@@ -20,6 +20,13 @@
             <tbody id="tbl_persona">
             </tbody>
         </table>
-    </div>
+        <div class="container mt-3">
+  <a href="<?php echo BASE_URL; ?>panel" class="btn text-white" style="background-color: #F5A5EC; border: none;">
+    <i class="bi bi-arrow-right"></i> Ir al inicio
+  </a>
 </div>
+    </div>
+    
+</div>
+
 <script src="<?php echo BASE_URL;?>views/js/functionsPersona.js"></script>

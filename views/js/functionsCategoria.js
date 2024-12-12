@@ -161,7 +161,7 @@ async function eliminarCategoria(id) {
                 swal("Eliminado","Categoria eliminado correctamente","success");
                 document.querySelector('#fila'+id).remove();
             }else{
-                swal("Eliminar",json.mensaje,"warning");
+                swal("Error",json.mensaje,"warning");
             }
         } catch (e) {
             console.log("ocurrio error" + e);

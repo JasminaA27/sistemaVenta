@@ -228,7 +228,7 @@ async function eliminarProducto(id) {
                 swal("Eliminado","Producto eliminado correctamente","success");
                 document.querySelector('#fila'+id).remove();
             }else{
-                swal("Eliminar",json.mensaje,"warning");
+                swal("Error",json.mensaje,"warning");
             }
         } catch (e) {
             console.log("ocurrio error" + e);

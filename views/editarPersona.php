@@ -1,4 +1,4 @@
-<a href="<?php echo BASE_URL; ?>personas"onclick="redirigir()" class="btn btn-link" style="color: black;"> Regresar</a>
+
 <div class="container">
     FORMULARIO DE EDITAR PERSONA
     <form action="" class="p-4 border rounded shadow" id="frmActualizar">    
@@ -58,6 +58,7 @@
             <input type="date" class="form-control" id="fecha_registro" name="fecha_registro" required>
         </div>  -->
         <button type="button" class="btn btn-success" onclick="actualizarPersona();">Actualizar</button>
+        <a href="<?php echo BASE_URL; ?>personas"onclick="redirigir()" class="btn btn-link" style="color: black;"> Regresar</a>
     </form>
 </div>
 <script src="<?php echo BASE_URL;?>views/js/functionsPersona.js"></script>

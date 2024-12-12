@@ -1,4 +1,4 @@
-<a href="<?php echo BASE_URL; ?>compras"onclick="redirigir()" class="btn btn-link" style="color: black;"> Regresar</a>
+
 <div class="container">
     FORMULARIO DE EDITAR COMPRAS
     <form action="" class="p-4 border rounded shadow" id="frmActualizar">
@@ -31,6 +31,7 @@
         </div>
       
         <button type="button" class="btn btn-success" onclick="actualizarCompras();">Actualizar</button>
+        <a href="<?php echo BASE_URL; ?>compras"onclick="redirigir()" class="btn btn-link" style="color: black;"> Regresar</a>
     </form>
 </div>
 <script src="<?php echo BASE_URL;?>views/js/functionsCompras.js"></script>

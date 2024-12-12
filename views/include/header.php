@@ -95,7 +95,7 @@
             </li>
             <li>
                 <a class="dropdown-item text-danger" href="#" onclick="cerrar_sesion();">
-                    <i class="bi bi-box-arrow-right me-3"></i> Cerrar Sesión
+                    <i class="bi bi-box-arrow-right me-2"></i> Cerrar Sesión
                 </a>
             </li>
         </ul>

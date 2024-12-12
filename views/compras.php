@@ -1,10 +1,10 @@
-<a href="<?php echo BASE_URL; ?>panel"onclick="redirigir()" class="btn btn-link" style="color: black;"> Inicio</a>
+
 <div class="container-fluid py-5"> <!-- Cambiado a container-fluid para más ancho -->
     <div class="row justify-content-center">
         <div class="col-lg-11 col-md-12"> <!-- Incrementar ancho del contenedor interno -->
             <div class="card shadow-lg">
                 <div class="card-header" style="background-color: #F5A5EC;">
-                    <h4 class="text-center" style="margin: 0;">COMPRAS</h4>
+                    <h4 class="text-center" style="margin: 0;">FORMULARIO DE COMPRAS</h4>
                 </div>
                 <div class="table-responsive">
                     <table class="table table-bordered table-hover text-center mb-0" style="width: 100%; table-layout: fixed;">
@@ -26,6 +26,12 @@
             </div>
         </div>
     </div>
+    <div class="container mt-3">
+  <a href="<?php echo BASE_URL; ?>panel" class="btn text-white" style="background-color: #F5A5EC; border: none;">
+    <i class="bi bi-arrow-right"></i> Ir al inicio
+  </a>
 </div>
+</div>
+
 <script src="<?php echo BASE_URL;?>views/js/functionsCompras.js"></script>
 
