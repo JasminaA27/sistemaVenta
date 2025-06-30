@@ -59,6 +59,12 @@ class ProductoModel{
         return$sql;
 
     }
+    public function comprasAsociados($id){
+        $sql = $this->conexion->query("SELECT COUNT(*) as count FROM compras WHERE id_producto ='{$id}'");
+        $resultado = $sql->fetch_object();
+        return $resultado -> count > 0;
+    }
+    
   
 }
 

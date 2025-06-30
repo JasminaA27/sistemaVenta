@@ -1,5 +1,5 @@
 
-<a href="<?php echo BASE_URL; ?>panel"onclick="redirigir()" class="btn btn-link" style="color: black;"> Inicio</a>
+
 <div class="container-fluid py-5">
     <div class="row justify-content-center">
         <div class="col-12">
@@ -29,6 +29,11 @@
                 </div>
             </div>
         </div>
+        <div class="container mt-3">
+  <a href="<?php echo BASE_URL; ?>panel" class="btn text-white" style="background-color: #F5A5EC; border: none;">
+    <i class="bi bi-arrow-right"></i> Ir al inicio
+  </a>
+</div>
     </div>
 </div>
 

@@ -182,7 +182,7 @@ if($tipo=="actualizar"){
         }
     }
 }
-if($tipo=="eliminar"){
+/* if($tipo=="eliminar"){
     
     if ($_POST){
     $id_producto = $_POST['id_producto'];
@@ -195,5 +195,28 @@ if($tipo=="eliminar"){
     }
     echo json_encode($response);
   }
+} */
+
+if ($tipo == "eliminar") {
+
+    if ($_POST) {
+        $id_producto = $_POST['id_producto'];
+
+        if ($objProducto->comprasAsociados($id_producto)) {
+            $arr_Respuesta = array('status' => false, 'mensaje' => 'No se puede eliminar el producto, por que
+         tiene categoria asociado');
+        } else {
+            $arrProducto = $objProducto->eliminarProducto($id_producto);
+            //print_r($arr_Respuesta);
+            if ($arrProducto) {
+
+                $arr_Respuesta = array('status' => true , 'mensaje' => '');
+            } else {
+                $arr_Respuesta = array('status' => false , 'mensaje' => 'No se puede eliminar la categoria');
+            }
+        }
+        echo json_encode($arr_Respuesta);
+    }
 }
+
 ?>

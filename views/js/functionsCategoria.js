@@ -146,6 +146,29 @@ async function eliminarCategoria(id) {
         }
           
     });
+    async function fnt_eliminar(id) {
+        const formData = new FormData();
+        formData.append('id_categoria',id);
+        try{
+            let respuesta = await fetch(base_url+'controller/categoria.php?tipo=eliminar',{
+                method: 'POST',
+                mode: 'cors',
+                cache: 'no-cache',
+                body: formData
+            });
+            json = await respuesta.json();
+            if(json.status){
+                swal("Eliminado","Categoria eliminado correctamente","success");
+                document.querySelector('#fila'+id).remove();
+            }else{
+                swal("Error",json.mensaje,"warning");
+            }
+        } catch (e) {
+            console.log("ocurrio error" + e);
+            
+        }
+    }
+
 }
 
 // async function eliminarProducto(id) {
@@ -162,26 +185,5 @@ async function eliminarCategoria(id) {
 
 //     });
 // }
-async function fnt_eliminar(id) {
-    const formData = new FormData();
-    formData.append('id_categoria',id);
-    try{
-        let respuesta = await fetch(base_url+'controller/categoria.php?tipo=eliminar',{
-            method: 'POST',
-            mode: 'cors',
-            cache: 'no-cache',
-            body: formData
-        });
-        json = await respuesta.json();
-        if(json.status){
-            swal("Eliminado","Categoria eliminado correctamente","success");
-            document.querySelector('#fila'+id).remove();
-        }else{
-            swal("Eliminar","error al eliminar","warning");
-        }
-    } catch (e) {
-        console.log("ocurrio error" + e);
-        
-    }
-}
+
 

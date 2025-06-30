@@ -45,41 +45,39 @@ if ($tipo == "registrar") {
 $objcategoria = new categoriaModel();
 $tipo = $_REQUEST['tipo'];
 
-if ($tipo=="listar"){
+if ($tipo == "listar") {
     //respuesta
-    $arr_Respuesta = array('status'=>false,'contenido'=>'');
+    $arr_Respuesta = array('status' => false, 'contenido' => '');
     $arr_categorias = $objcategoria->obtener_categorias();
     if (!empty($arr_categorias)) {
         // recordemos el array para agregar las opciones de las categorias
-        for ($i=0; $i < count($arr_categorias); $i++) { 
+        for ($i = 0; $i < count($arr_categorias); $i++) {
             $id_categoria = $arr_categorias[$i]->id;
             $categoria = $arr_categorias[$i]->nombre;
 
-            $opciones = '<a href="'.BASE_URL.'editarCategoria/'.$id_categoria.'"class="btn btn-outline-success">Editar</a>
-            <button onclick="eliminarCategoria('.$id_categoria.');"class="btn btn-outline-danger" >Eliminar</button>';
-            $arr_categorias[$i] ->options = $opciones;
+            $opciones = '<a href="' . BASE_URL . 'editarCategoria/' . $id_categoria . '"class="btn btn-outline-success">Editar</a>
+            <button onclick="eliminarCategoria(' . $id_categoria . ');"class="btn btn-outline-danger" >Eliminar</button>';
+            $arr_categorias[$i]->options = $opciones;
         }
-        $arr_Respuesta['status']= true;
-        $arr_Respuesta['contenido']= $arr_categorias;
+        $arr_Respuesta['status'] = true;
+        $arr_Respuesta['contenido'] = $arr_categorias;
     }
     echo json_encode($arr_Respuesta);
-
 }
 
-if($tipo == "ver"){
+if ($tipo == "ver") {
     //print_r($_POST);
     $id_categoria = $_POST['id_categoria'];
     $arr_Respuesta = $objcategoria->verCatergoria($id_categoria);
     //print_r($arr_Respuesta);
     if (empty($arr_Respuesta)) {
-        $response = array('status'=> false,'mensaje'=>"Error, no hay informacion");
-    }else {
-        $response = array('status'=> true,'mensaje'=>"Datos encontrados",'contenido'=>$arr_Respuesta);
+        $response = array('status' => false, 'mensaje' => "Error, no hay informacion");
+    } else {
+        $response = array('status' => true, 'mensaje' => "Datos encontrados", 'contenido' => $arr_Respuesta);
     }
     echo json_encode($response);
-
 }
-if($tipo=="actualizar"){
+if ($tipo == "actualizar") {
 
     if ($_POST) {
         $id_producto = $_POST['id_producto'];
@@ -109,12 +107,12 @@ if($tipo=="actualizar"){
                     'mensaje' => 'Error al actualizar categoría'
                 );
             }
-        
-        echo json_encode($arr_Respuesta);
+
+            echo json_encode($arr_Respuesta);
         }
     }
 }
-if($tipo=="eliminar"){
+/* if($tipo=="eliminar"){
     
     if ($_POST){
     $id_categoria = $_POST['id_categoria'];
@@ -127,6 +125,26 @@ if($tipo=="eliminar"){
     }
     echo json_encode($response);
   }
-}
+} */
 
-?>
+if ($tipo == "eliminar") {
+
+    if ($_POST) {
+        $id_categoria = $_POST['id_categoria'];
+
+        if ($objcategoria->productosAsociados($id_categoria)) {
+            $arr_Respuesta = array('status' => false, 'mensaje' => 'No se puede eliminar la categoria, por que
+         tiene producto asociado');
+        } else {
+            $arrCategoria = $objcategoria->eliminarCategoria($id_categoria);
+            //print_r($arr_Respuesta);
+            if ($arrCategoria) {
+
+                $arr_Respuesta = array('status' => true , 'mensaje' => '');
+            } else {
+                $arr_Respuesta = array('status' => false , 'mensaje' => 'No se puede eliminar la categoria');
+            }
+        }
+        echo json_encode($arr_Respuesta);
+    }
+}

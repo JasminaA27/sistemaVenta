@@ -1,4 +1,4 @@
-<a href="<?php echo BASE_URL; ?>productos"onclick="redirigir()" class="btn btn-link" style="color: black;"> Regresar</a>
+
 <div class="container">
     FORMMULARIO DE EDITAR PRODUCTO
     <form action="" class="p-4 border rounded shadow" id="frmActualizar">
@@ -47,6 +47,7 @@
             </select>
         </div>
         <button type="button" class="btn btn-success" onclick="actualizarProducto();">Actualizar</button>
+        <a href="<?php echo BASE_URL; ?>productos"onclick="redirigir()" class="btn btn-link" style="color: black;"> Regresar</a>
     </form>
 </div>
 
